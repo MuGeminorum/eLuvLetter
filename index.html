@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=1, minimum-scale=0.6, user-scalable=0">
+<meta name="description" content="Wear your earphone">
+<title>Happy Valentine's Day</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="stylesheets/style.css" />
+
+<script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/sakura.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/modernizr.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/typed.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bgm.js" type="text/javascript" charset="utf-8"></script>
+
+<!--script type="text/javascript" src="js/soundmanager2.js"></script> 
+<script type="text/javascript" src="js/pxloader-all.min.js"></script--> 
+
+<!--[if IE 8]>
+<script src="http://libs.useso.com/js/jquery/1.8.0/jquery.min.js"></script>
+<script>	
+	$(document).ready(function(){
+		$("#contact").addClass("target");
+		$("#flip2back, #close").click(function(e){
+			$(".target").removeClass("target");
+			e.preventDefault();
+		});
+		$("#open, #flip").click(function(e){
+			var $anchor = $(this);
+			$($anchor.attr('href')).addClass("target");
+			e.preventDefault();
+		});
+	});
+</script>
+<![endif]-->
+
+</head>
+
+<body>
+
+	<div id="jsi-cherry-container"></div>
+
+	<section class="container" id="contact" >
+		<form class="flip">
+			<div class="front">
+            <h2>To&nbsp;&nbsp;Abby</h2>
+				<a id="flip2back" href="#">Flip</a>
+			</div>
+			<div id="content" class="back">
+				<div id="letter">
+					<div class="container">
+						<div class="flip">                        
+                        	<div class="front"></div>
+			  				<div class="back">
+                            	<p class="letter"></p> 
+                                <a id="close" href="#">Close</a>								
+							</div>                            
+						</div>
+					</div>
+				</div>
+				<div id="top">
+					<a id="flip" href="#contact">Flip</a>
+				</div>
+				<div id="lid" class="container">
+  					<div class="flip">  
+  						<div class="front">
+							<a id="open" href="#content"><span></span></a>
+						</div>                        
+						<div class="back"></div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</section>
+
+	<div id="footer">
+		<audio id="music2" preload="auto" loop></audio>
+		<a id="music_btn2" href="javascript:playPause();"></a>
+	</div>
+    
+</body>
+<script src="js/letter.js" type="text/javascript" charset="utf-8"></script>
+</html>
+
