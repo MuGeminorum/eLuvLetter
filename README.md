@@ -14,7 +14,7 @@ After downloading the source code, open the `index.html` file with a code editor
 
 Find `<h2>` and change the name of the horizontal line in the figure to the name of the person to be confessed.
 
-Then use a code editor to open the `letter.js` file in the `../envelope/js` path. This part of the data controls the typing effects of the love letter. For the specific meaning, please see the demo code.
+Then use a code editor to open the `letter.js` file in the `./envelope/js` path. This part of the data controls the typing effects of the love letter. For the specific meaning, please see the demo code.
 
 The code includes the English and Japanese titles of the person to be confessed. That is to achieve the unique effect of re-type - print the English name first, then delete all backspaces - and then re-enter the Japanese title and the Japanese context. Among the code, `^200` means typing pause for 200 milliseconds. For example, `アビー^200ちゃん` means break for 200 milliseconds after typing `アビー,` and then `ちゃん`; you can modify the content and pause time according to your situation.
 
@@ -38,9 +38,9 @@ Assuming your username is `calendar`, then build the repository according to the
 
 After building the repository, log in to GitHub Desktop with the account you just applied. After successful login, select `File-> Clone repo...`.
 
-Select the repository that has just been created by you on the web page, and select a local path to hold the repo to clone. Here, take `F:\downloads\git` as an example, and click `Clone.`
+Select the repository that has just been created by you on the web page, and select a local path to hold the repo to clone. Here, take `.\git` as an example, and click `Clone.`
 
-After cloning, there will be an additional `valenday.github.io` folder in our local path `F:\downloads\git,` and then copy the customized code folder called `envelope` into `F:\downloads\git\valenday.github.io` path, a local change record will show up on the GitHub Desktop at this time.
+After cloning, there will be an additional `valenday.github.io` folder in our local path `F:\downloads\git,` and then copy the customized code folder called `envelope` into `.\git\valenday.github.io` path, a local change record will show up on the GitHub Desktop at this time.
 
 Casually fill in the title of change record and click `Commit to master.`
 
