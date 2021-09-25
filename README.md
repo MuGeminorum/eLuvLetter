@@ -4,7 +4,7 @@
 <!--[![Github All Releases](https://img.shields.io/github/downloads/george-chou/envelope/total.svg)](https://github.com/george-chou/envelope/releases)
 [![GitHub release](https://img.shields.io/github/release/george-chou/envelope.svg)](https://github.com/george-chou/envelope/releases/latest)-->
 
-Valentine's love confession code. [View demo](https://george-chou.github.io/envelope)
+Valentine's love confession code. [View demo](https://george-chou.github.io/eLuvLetter/)
 
 ## Manual of pure front-end Valentine's Day love confession code
 
