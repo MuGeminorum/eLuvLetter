@@ -5,8 +5,6 @@
     position: absolute;
     transform: rotate(45deg) scale(0.5);
     animation: heartbit 0.5s alternate infinite;
-    border-top: solid;
-    border-left: solid;
 }
 
 .heart::before {
@@ -16,7 +14,7 @@
     background: #e74949;
     position: absolute;
     left: 0;
-    top: -100px;
+    top: -99px;
     border-radius: 100px 100px 0 0;
 }
 
@@ -26,7 +24,7 @@
     height: 200px;
     background: #e74949;
     position: absolute;
-    left: -100px;
+    left: -99px;
     top: 0;
     border-radius: 100px 0 0 100px;
 }
