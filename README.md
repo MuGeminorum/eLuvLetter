@@ -14,13 +14,15 @@ git clone https://github.com/你的github用户名/eLuvLetter.git
 
 进入 ./eLuvLetter/font/ 目录下打开 content.json，按如下说明自定义配置：
 
-`{`
-`    "to"        : "信封收件人",`
-`    "from"      : "信纸落款",`
-`    "recipient" : "信纸收件人",`
-`    "bgm"       : "BGM URL",`
-`    "text"      : "信纸内容"`
-`}`
+```
+{
+    "to"        : "信封收件人",
+    "from"      : "信纸落款",
+    "recipient" : "信纸收件人",
+    "bgm"       : "BGM URL",
+    "text"      : "信纸内容"
+}
+```
 
 其中demo里符号 `^n` 的含义是打字机停顿n毫秒，
 
@@ -34,10 +36,12 @@ BGM URL可以是demo代码中带的默认mp3目录，也可以是网络mp3直链
 ### 部署到 Vercel 及广域网展示
 首先将修改过的本地代码同步到你的github账号上：
 命令行进入 ./eLuvLetter 后
+```
 git add .
 git commit -a
 输入 :wq! 回车
 git push
+```
 
 再进入 vercel 官网： <https://vercel.com/login>
 
