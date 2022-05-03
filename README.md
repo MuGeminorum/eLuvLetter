@@ -5,12 +5,15 @@
 
 ### 安装 XAMPP
 教程： <https://www.bilibili.com/video/BV1e7411u7qY>
+
 下载： <https://www.apachefriends.org/download.html>
 
 ### 本地部署
 首先注册一个 github 账号并 fork 一份本仓库到你自己的账号
 在 cmd 中切换到 XAMPP 的 htdocs 目录下，clone仓库：
+```
 git clone https://github.com/你的github用户名/eLuvLetter.git
+```
 
 进入 ./eLuvLetter/font/ 目录下打开 content.json，按如下说明自定义配置：
 
@@ -46,7 +49,11 @@ git push
 再进入 vercel 官网： <https://vercel.com/login>
 
 使用你自己的 github 账号授权登录，点击 `+ New Project`，
+
 在 Import Git Repository 的搜索框中键入关键字 eLuvLetter 找到之前 fork 的那个仓库，
+
 点击 `Import`，修改 Configure Project 下的 PROJECT NAME 
+
 保证不与别人冲突后点击 `Deploy`
-部署完成后，可在广域网中访问 `%PROJECT NAME%.vercel.app` 查看网页。(其中 %PROJECT NAME% 就是刚刚 Configure Project 下修改的 PROJECT NAME)
+
+部署完成后，可在广域网中访问 `https://%PROJECT NAME%.vercel.app` 查看网页。(其中 %PROJECT NAME% 就是刚刚 Configure Project 下修改的 PROJECT NAME)
