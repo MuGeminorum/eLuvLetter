@@ -1,11 +1,11 @@
 let envelope_opened = false;
 
 let content = {
-	to			: "",
-	from		: "",
-	recipient	: "",
-	text		: "",
-	sign		: 0
+	to: "",
+	from: "",
+	recipient: "",
+	text: "",
+	sign: 0
 };
 
 $("#open").click(function () {
@@ -16,7 +16,7 @@ $("#open").click(function () {
 			strings: [
 				"^1000Dear&nbsp;&nbsp;" + content.to,
 				content.recipient + "<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
-				content.text + "<br><br><p style='float:right; display:block; width:" + 
+				content.text + "<br><br><p style='float:right; display:block; width:" +
 				content.sign + "px;'>^1000" + content.from + "</p>"
 			],
 			typeSpeed: 100,
@@ -108,9 +108,8 @@ window.onload = function () {
 		content.text = result.text;
 		content.sign = (2 + content.from.length) * 20;
 		$('#recipient').append(content.to);
+		toBase64(result.bgm);
 	});
-
-	toBase64("./bgm/bgm.mp3");
 
 	document.addEventListener('touchstart', function (event) {
 		if (event.touches.length > 1) event.preventDefault();
