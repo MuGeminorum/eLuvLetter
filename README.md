@@ -28,7 +28,7 @@ git clone https://github.com/你的github用户名/eLuvLetter.git
 }
 ```
 
-其中demo里符号 `^n` 的含义是打字机停顿n毫秒，
+其中demo里符号 `^n` 的含义是打字机停顿 n 毫秒，
 
 BGM URL可以是 demo 代码中带的默认 mp3 目录，也可以是网络 mp3 直链(注：最好不用 API 获取 mp3，可能会被跨域封锁)
 <br>
@@ -39,7 +39,7 @@ BGM URL可以是 demo 代码中带的默认 mp3 目录，也可以是网络 mp3 
 <br>
 建议使用本地展示调试完毕后再进行下一步
 
-### 部署到 Vercel 及广域网展示
+## 部署到 Vercel 及广域网展示
 首先将修改过的本地代码同步到你的 GitHub 账号上：
 
 命令行进入 ./eLuvLetter 后
@@ -62,5 +62,5 @@ git push
 
 部署完成后，可在广域网中访问 `https://%PROJECT NAME%.vercel.app` 查看网页。(其中 %PROJECT NAME% 就是刚刚 Configure Project 下修改的 PROJECT NAME)
 
-### 未来工作
+## 未来工作
 目前信纸内容有字数限制，未来有余力可在信纸上添加滚轴实现字数扩展，也欢迎各位大神能在此基础上把这些问题优化掉。
