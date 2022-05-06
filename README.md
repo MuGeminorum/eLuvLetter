@@ -3,7 +3,7 @@
 ## 本地调试
 
 ### 安装 Git
-教程：<a href="https://www.bilibili.com/video/BV1FE411P7B3" target="_blank">bilibili.com/video/BV1FE411P7B3</a>
+教程：<a href="https://www.bilibili.com/video/BV1BE411g7SV" target="_blank">bilibili.com/video/BV1BE411g7SV</a>
 
 下载：<a href="https://git-scm.com/downloads" target="_blank">git-scm.com/downloads</a>
 
