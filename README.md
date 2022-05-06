@@ -3,12 +3,14 @@
 ## 本地调试
 
 ### 安装 Git
-<a href="https://git-scm.com/downloads" target="_blank">下载</a>
+教程：<a href="https://www.bilibili.com/video/BV1FE411P7B3" target="_blank">bilibili.com/video/BV1FE411P7B3</a>
+
+下载：<a href="https://git-scm.com/downloads" target="_blank">git-scm.com/downloads</a>
 
 ### 安装 XAMPP
-<a href="https://www.bilibili.com/video/BV1e7411u7qY" target="_blank">教程</a>
+教程：<a href="https://www.bilibili.com/video/BV1e7411u7qY" target="_blank">bilibili.com/video/BV1e7411u7qY</a>
 
-<a href="https://www.apachefriends.org/download.html" target="_blank">下载</a>
+下载：<a href="https://www.apachefriends.org/download.html" target="_blank">apachefriends.org/download.html</a>
 
 ### 本地部署
 首先注册一个 GitHub 账号并 fork 一份本仓库到你自己的账号
@@ -65,4 +67,4 @@ git push
 部署完成后，可在广域网中访问 `https://%PROJECT NAME%.vercel.app` 查看网页。(其中 %PROJECT NAME% 就是刚刚 Configure Project 下修改的 PROJECT NAME)
 
 ## 未来工作
-目前信纸内容有字数限制，未来有余力可在信纸上添加滚轴实现字数扩展，也欢迎各位大神能在此基础上把这些问题优化掉。
+目前信纸内容有字数限制，未来有余力可在信纸上添加滚轴实现字数扩展，也欢迎各位大神能在此基础上把这些问题优化掉来 merge。
