@@ -39,7 +39,7 @@ BGM URL可以是 demo 代码中带的默认 mp3 目录，也可以是网络 mp3 
 如果使用默认目录，可将自己的 mp3 重命名成 bgm.mp3 覆盖掉 ./eLuvLetter/bgm 下的 bgm.mp3 实现自定义修改 BGM
 
 ### 本地展示
-在 XAMPP 上打开 Apache，进入 <a href="http://localhost/acg-album" target="_blank">localhost/acg-album</a>
+在 XAMPP 上打开 Apache，进入 <a href="http://localhost/eLuvLetter" target="_blank">localhost/eLuvLetter</a>
 <br>
 建议使用本地展示调试完毕后再进行下一步
 
