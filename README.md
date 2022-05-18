@@ -1,5 +1,7 @@
 # 表白信封使用教程
 
+[![license](https://img.shields.io/github/license/george-chou/eLuvLetter.svg)](https://github.com/george-chou/eLuvLetter/blob/master/LICENSE)
+
 ## 本地调试
 
 ### 安装 Git
