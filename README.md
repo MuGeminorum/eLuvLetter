@@ -17,7 +17,7 @@
 下载：<a href="https://www.apachefriends.org/download.html" target="_blank">apachefriends.org/download.html</a>
 
 ### 本地部署
-1. 首先注册一个 GitHub 账号并 fork 一份 <a href='https://github.com/george-chou/eLuvLetter'>此仓库</a> 到你自己的账号
+1. 首先注册一个 GitHub 账号并 fork 一份 <a href='https://github.com/george-chou/eLuvLetter' target="_blank">此仓库</a> 到你自己的账号
 2. 在 cmd 中切换到 XAMPP 的 htdocs 目录下，克隆仓库：
 ```
 git clone https://github.com/你的github用户名/eLuvLetter.git
