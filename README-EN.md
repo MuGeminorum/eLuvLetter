@@ -24,6 +24,7 @@ git clone https://github.com/%Your_GitHub_Account%/eLuvLetter.git
     "to"        : "envelope recipient",
     "from"      : "sign",
     "recipient" : "letter recipient",
+    "title"     : "Web page tab title",
     "bgm"       : "BGM URL",
     "text"      : "letter content"
 }

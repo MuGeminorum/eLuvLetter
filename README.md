@@ -4,8 +4,6 @@
 
 请遵循 **`使用教程`** 验证代码，多半 **`疑难杂症`** 是 **`直接用浏览器打开index.html`** 所致。
 
-fork 得到的私人仓库部署到 Vercel 后，更新代码 git push 到私人仓库时，Vercel 端会随之自动更新，因此无需重复部署。
-
 ## 本地调试
 
 ### 安装 Git
@@ -32,6 +30,7 @@ git clone https://github.com/你的github用户名/eLuvLetter.git
     "to"        : "信封收件人",
     "from"      : "信纸落款",
     "recipient" : "信纸收件人",
+    "title"     : "网页页签标题",
     "bgm"       : "BGM URL",
     "text"      : "信纸内容"
 }
@@ -69,6 +68,8 @@ git push
 6. 保证 **`PROJECT NAME `** 不与别人冲突后点击 **`Deploy`**
 
 7. 部署完成后，可在广域网中访问 **`https://%PROJECT_NAME%.vercel.app`** 查看网页。(其中 **`%PROJECT_NAME%`** 就是刚刚 **`Configure Project`** 下修改的 **`PROJECT NAME `**)
+
+注：fork 得到的私人仓库部署到 Vercel 后，更新代码 git push 到私人仓库时，Vercel 端会随之自动更新，因此无需重复部署。
 
 ## 未来工作
 1. 目前信纸内容有字数限制，未来有余力可在信纸上添加滚轴实现字数扩展

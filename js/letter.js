@@ -107,6 +107,7 @@ window.onload = function () {
 		content.recipient = result.recipient;
 		content.text = result.text;
 		content.sign = (2 + content.from.length) * 20;
+		document.title = result.title;
 		$('#recipient').append(content.to);
 		toBase64(result.bgm);
 	});
