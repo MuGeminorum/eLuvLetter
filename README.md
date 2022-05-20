@@ -4,6 +4,8 @@
 
 请遵循 **`使用教程`** 验证代码，多半 **`疑难杂症`** 是 **`直接用浏览器打开index.html`** 所致。
 
+fork 得到的私人仓库部署到 Vercel 后，更新代码 git push 到私人仓库时，Vercel 端会随之自动更新，因此无需重复部署。
+
 ## 本地调试
 
 ### 安装 Git
@@ -39,7 +41,7 @@ git clone https://github.com/你的github用户名/eLuvLetter.git
 
 BGM URL 可以是 demo 代码中带的默认 mp3 目录，也可以是网络 mp3 直链(注：最好不用 API 获取 mp3，可能会被跨域封锁)
 <br>
-如果使用默认目录，可将自己的 mp3 重命名成 bgm.mp3 覆盖掉 ./eLuvLetter/bgm 下的 bgm.mp3 实现自定义修改 BGM
+如果使用默认目录，可将自己的 mp3 重命名成 bgm.mp3 覆盖掉 ./eLuvLetter/bgm 下的 bgm.mp3 实现自定义修改 BGM (建议 bgm.mp3 不要过大，否则加载时间过长卡在心跳特效，影响体验)
 
 ### 本地展示
 在 XAMPP 上打开 Apache，进入 <a href="http://localhost/eLuvLetter" target="_blank">localhost/eLuvLetter</a>
