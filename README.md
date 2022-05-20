@@ -2,7 +2,7 @@
 
 [![license](https://img.shields.io/github/license/george-chou/eLuvLetter.svg)](https://github.com/george-chou/eLuvLetter/blob/master/LICENSE)
 
-请遵循 **`使用教程`** 验证代码，多半 **`疑难杂症`** 是 **`直接用浏览器打开index.html`** 所致，此类问题不予解答。
+请遵循 **`使用教程`** 验证代码，多半 **`疑难杂症`** 是 **`直接用浏览器打开index.html`** 所致。
 
 ## 本地调试
 
@@ -17,7 +17,7 @@
 下载：<a href="https://www.apachefriends.org/download.html" target="_blank">apachefriends.org/download.html</a>
 
 ### 本地部署
-1. 首先注册一个 GitHub 账号并 fork 一份本仓库到你自己的账号
+1. 首先注册一个 GitHub 账号并 fork 一份 <a href='https://github.com/george-chou/eLuvLetter'>此仓库</a> 到你自己的账号
 2. 在 cmd 中切换到 XAMPP 的 htdocs 目录下，克隆仓库：
 ```
 git clone https://github.com/你的github用户名/eLuvLetter.git
