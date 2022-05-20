@@ -2,6 +2,8 @@
 
 [![license](https://img.shields.io/github/license/george-chou/eLuvLetter.svg)](https://github.com/george-chou/eLuvLetter/blob/master/LICENSE)
 
+请遵循 **`使用教程`** 验证代码，多半 **`疑难杂症`** 是 **`直接用浏览器打开index.html`** 所致，此类问题不予解答。
+
 ## 本地调试
 
 ### 安装 Git
