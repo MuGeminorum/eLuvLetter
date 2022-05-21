@@ -5,8 +5,6 @@
 ## Install Git
 <a href="https://git-scm.com/downloads" target="_blank">git-scm.com/downloads</a>
 
-<!-- Install XAMPP: <a href="https://www.apachefriends.org/download.html" target="_blank">apachefriends.org/download.html</a> -->
-
 ## Custom
 
 1. Register a GitHub account and fork a copy of this repository to your own account
@@ -34,11 +32,6 @@ The symbol `^n` in the demo means that the typewriter pauses for n milliseconds,
 BGM URL is the default mp3 directory or mp3 direct link in the demo code(Note: It is best not to use the API to get mp3, it may be blocked by cross-domain)
 
 If you use the default directory, you can rename your mp3 to `bgm.mp3` and overwrite `bgm.mp3` under `./eLuvLetter/bgm` to achieve custom modification of BGM
-
-<!-- ### Local display
-Open Apache on XAMPP, go to <a href="http://localhost/eLuvLetter" target="_blank">localhost/eLuvLetter</a>
-
-It is recommended to use the local display to debug before proceeding to the next step. -->
 
 ## Deploy to Vercel
 1. Sync the modified local code to your GitHub account:

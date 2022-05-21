@@ -4,17 +4,10 @@
 
 请遵循 <a href='https://www.bilibili.com/video/BV1wp4y1W7aH' target='_blank'>使用教程</a> 验证代码，多半 **`疑难杂症`** 是 **`直接用浏览器打开index.html`** 所致。
 
-<iframe src="//player.bilibili.com/player.html?aid=971706720&bvid=BV1wp4y1W7aH&cid=725983765&page=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
 ## 安装 Git
 教程：<a href="https://www.bilibili.com/video/BV1BE411g7SV" target="_blank">bilibili.com/video/BV1BE411g7SV</a>
 
 下载：<a href="https://git-scm.com/downloads" target="_blank">git-scm.com/downloads</a>
-
-<!-- ### 安装 XAMPP
-教程：<a href="https://www.bilibili.com/video/BV1e7411u7qY" target="_blank">bilibili.com/video/BV1e7411u7qY</a>
-
-下载：<a href="https://www.apachefriends.org/download.html" target="_blank">apachefriends.org/download.html</a> -->
 
 ## 自定义信封
 1. 首先注册一个 GitHub 账号并 fork 一份 <a href='https://github.com/george-chou/eLuvLetter' target="_blank">此仓库</a> 到你自己的账号
@@ -41,11 +34,6 @@ git clone https://github.com/你的github用户名/eLuvLetter.git
 BGM URL 可以是 demo 代码中带的默认 mp3 目录，也可以是网络 mp3 直链(注：最好不用 API 获取 mp3，可能会被跨域封锁)
 <br>
 如果使用默认目录，可将自己的 mp3 重命名成 bgm.mp3 覆盖掉 ./eLuvLetter/bgm 下的 bgm.mp3 实现自定义修改 BGM (建议 bgm.mp3 不要过大，否则加载时间过长卡在心跳特效，影响体验)
-
-<!-- ### 本地展示
-在 XAMPP 上打开 Apache，进入 <a href="http://localhost/eLuvLetter" target="_blank">localhost/eLuvLetter</a>
-<br>
-建议使用本地展示调试完毕后再进行下一步。 -->
 
 ## 部署到 Vercel 及广域网展示
 1. 首先将修改过的本地代码同步到你的 GitHub 账号上：
