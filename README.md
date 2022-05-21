@@ -2,7 +2,7 @@
 
 [![license](https://img.shields.io/github/license/george-chou/eLuvLetter.svg)](https://github.com/george-chou/eLuvLetter/blob/master/LICENSE)
 
-请遵循 <a href='https://www.bilibili.com/video/BV1wp4y1W7aH' target='_blank'>使用教程</a> 验证代码，多半 **`疑难杂症`** 是 **`直接用浏览器打开index.html`** 所致。
+请遵循 <a href='https://www.bilibili.com/video/BV1wp4y1W7aH?p=2' target='_blank'>使用教程</a> 验证代码，多半 **`疑难杂症`** 是 **`直接用浏览器打开index.html`** 所致。
 
 ## 安装 Git
 教程：<a href="https://www.bilibili.com/video/BV1BE411g7SV" target="_blank">bilibili.com/video/BV1BE411g7SV</a>
