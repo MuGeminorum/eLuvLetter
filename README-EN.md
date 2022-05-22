@@ -2,6 +2,14 @@
 
 [![license](https://img.shields.io/github/license/george-chou/eLuvLetter.svg)](https://github.com/george-chou/eLuvLetter/blob/master/LICENSE)
 
+## Important links
+|    Name    | URL                                         |
+| :--------: | :------------------------------------------ |
+|    Git     | <https://git-scm.com/downloads>             |
+|   GitHub   | <https://github.com/>                       |
+| eLuvLetter | <https://github.com/george-chou/eLuvLetter> |
+|   Vercel   | <https://vercel.com/>                       |
+
 ## Install Git
 <a href="https://git-scm.com/downloads" target="_blank">git-scm.com/downloads</a>
 
