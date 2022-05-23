@@ -49,6 +49,8 @@ BGM URL 可以是 demo 代码中带的默认 mp3 目录，也可以是网络 mp3
 cd eLuvLetter
 git add .
 git commit -a
+键入i键
+输入变更描述
 输入 :wq! 回车
 git push
 ```

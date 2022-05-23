@@ -47,6 +47,8 @@ If you use the default directory, you can rename your mp3 to `bgm.mp3` and overw
 cd eLuvLetter
 git add .
 git commit -a
+i
+input description
 :wq!
 git push
 ```
