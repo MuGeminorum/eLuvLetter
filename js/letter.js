@@ -1,3 +1,35 @@
+String.prototype.pxWidth = function (font) {
+	let canvas = String.prototype.pxWidth.canvas ||
+		(String.prototype.pxWidth.canvas = document.createElement("canvas")),
+		context = canvas.getContext("2d");
+
+	font && (context.font = font);
+	let metrics = context.measureText(this);
+
+	return metrics.width;
+}
+
+function isNumber(str) {
+	return !isNaN(parseInt(str));
+}
+
+function getPureStr(str) {
+	let spices = str.split('^');
+	let res = spices[0];
+	for (let i = 1; i < spices.length; i++) {
+		let tmp = spices[i];
+		if (isNumber(tmp.charAt(0))) {
+			let rm = parseInt(tmp).toString();
+			tmp = tmp.substring(rm.length);
+		}
+		else {
+			tmp = '^' + tmp;
+		}
+		res += tmp;
+	}
+	return res;
+}
+
 let envelope_opened = false;
 
 let content = {
@@ -106,7 +138,7 @@ window.onload = function () {
 		content.from = result.from;
 		content.recipient = result.recipient;
 		content.text = result.text;
-		content.sign = (2 + content.from.length) * 20;
+		content.sign = getPureStr(content.from).pxWidth('18px Satisfy, serif');
 		document.title = result.title;
 		$('#recipient').append(content.to);
 		toBase64(result.bgm);
