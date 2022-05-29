@@ -480,6 +480,11 @@ section.container>form.flip>.front {
 	transition: 0s 0s;
 }
 
+#context {
+	height: 327px;
+	overflow-y: auto;
+}
+
 #content:target #letter {
 	top: -40%;
 	-o-transition: .5s .5s;
