@@ -34,7 +34,7 @@
 /******/ 			id: moduleId,
 /******/ 			loaded: false
 				/******/
-};
+			};
 /******/
 /******/ 		// Execute the module function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
@@ -45,7 +45,7 @@
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 			/******/
-}
+		}
 /******/
 /******/
 /******/ 	// expose the modules object (__webpack_modules__)
@@ -60,7 +60,7 @@
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
 		/******/
-})
+	})
 /************************************************************************/
 /******/([
 /* 0 */
@@ -562,7 +562,7 @@
 			module.exports = exports['default'];
 
 			/***/
-}),
+		}),
 /* 1 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -790,7 +790,7 @@
 			exports.initializer = initializer;
 
 			/***/
-}),
+		}),
 /* 2 */
 /***/ (function (module, exports) {
 
@@ -955,7 +955,7 @@
 			module.exports = exports['default'];
 
 			/***/
-}),
+		}),
 /* 3 */
 /***/ (function (module, exports) {
 
@@ -1053,7 +1053,7 @@
 			exports.htmlParser = htmlParser;
 
 			/***/
-})
+		})
 /******/])
 });
 ;
