@@ -36,6 +36,14 @@
 	opacity: 0.2;
 }
 
+#btn {
+	display: block;
+	width: 150px;
+	height: 150px;
+	background: url(../img/stitch.png) no-repeat;
+	background-position: 0 0;
+}
+
 #envelope {
 	display: none;
 }
@@ -44,19 +52,11 @@ body {
 	opacity: 0;
 }
 
-span {
-	display: block;
-	width: 150px;
-	height: 150px;
-	background: url(../img/stitch.png) no-repeat;
-	background-position: 0 0;
-}
-
 .typed-cursor {
 	opacity: 0;
+	animation: blink 0.7s infinite;
 	-webkit-animation: blink 0.7s infinite;
 	-moz-animation: blink 0.7s infinite;
-	animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
@@ -283,7 +283,7 @@ section.container>form.flip {
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
-	transition: -webkit-transform 0.7s 0s;
+	transition: transform 0.7s 0s;
 	-webkit-transition: -webkit-transform 0.7s 0s;
 	-moz-transition: -moz-transform 0.7s 0s;
 	transform-origin: center center;
@@ -302,17 +302,17 @@ section.container>form.flip>.back {
 }
 
 section.container>form.flip>.back {
+	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
-	transform: rotateY(180deg);
 	background: #837362;
 	box-shadow: inset 0 10px 30px -10px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.2);
 }
 
 section.container:target>form.flip {
+	transform: rotateY(0deg);
 	-webkit-transform: rotateY(0deg);
 	-moz-transform: rotateY(0deg);
-	transform: rotateY(0deg);
 }
 
 .no-csstransforms3d section.container:target>form.flip>.back {
@@ -323,32 +323,32 @@ section.container:target>form.flip {
 	position: relative;
 	width: 100%;
 	height: 50%;
+	perspective: 800px;
 	-webkit-perspective: 800px;
 	-moz-perspective: 800px;
-	perspective: 800px;
 	z-index: 2;
 	transition: z-index 0s 1s;
-	-moz-transition: z-index 0s 1s;
 	-webkit-transition: z-index 0s 1s;
+	-moz-transition: z-index 0s 1s;
 }
 
 .no-csstransforms3d .container#lid {
+	transition: none;
 	-webkit-transition: none;
 	-moz-transition: none;
-	transition: none;
 }
 
 #content:target .container#lid {
 	z-index: -1;
 	transition: z-index 0s .5s;
-	-moz-transition: z-index 0s .5s;
 	-webkit-transition: z-index 0s .5s;
+	-moz-transition: z-index 0s .5s;
 }
 
 .no-csstransforms3d #content:target .container#lid {
+	transition: none;
 	-webkit-transition: none;
 	-moz-transition: none;
-	transition: none;
 }
 
 .no-csstransforms3d .container#lid .back {
@@ -367,15 +367,15 @@ section.container:target>form.flip {
 
 #lid .flip {
 	position: absolute;
+	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
+	transition: transform 0.5s 1s;
 	-webkit-transition: -webkit-transform 0.5s 1s;
 	-moz-transition: -moz-transform 0.5s 1s;
-	transition: -moz-transform 0.5s 1s;
+	transform-origin: left top;
 	-webkit-transform-origin: left top;
 	-moz-transform-origin: left top;
-	transform-origin: left top;
 }
 
 #lid .flip>.front,
@@ -383,35 +383,35 @@ section.container:target>form.flip {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
 }
 
 #lid .flip>.back {
+	transform: rotateX(180deg);
 	-webkit-transform: rotateX(180deg);
 	-moz-transform: rotateX(180deg);
-	transform: rotateX(180deg);
 }
 
 #content:target #lid .flip {
+	transform: rotateX(180deg);
 	-webkit-transform: rotateX(180deg);
 	-moz-transform: rotateX(180deg);
-	transform: rotateX(180deg);
+	transition-duration: 0.5s;
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
-	transition-duration: 0.5s;
+	transition-delay: 0s;
 	-webkit-transition-delay: 0s;
 	-moz-transition-delay: 0s;
-	transition-delay: 0s;
 }
 
 #letter .flip>div,
 #lid .flip>div,
 section.container>form.flip>div {
+	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 #lid .flip .front,
@@ -453,9 +453,9 @@ section.container>form.flip>.front {
 	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(163, 140, 130, 0.17) 100%), url("../img/bg.png");
 	background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(163, 140, 130, 0.17) 100%), url("../img/bg.png");
 	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(163, 140, 130, 0.17) 100%), url("../img/bg.png");
+	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 	width: 100%;
 	height: 65%;
 	position: absolute;
@@ -474,10 +474,10 @@ section.container>form.flip>.front {
 	left: 5%;
 	top: 5%;
 	z-index: 0;
+	transition: 0s 0s;
 	-webkit-transition: .5s .5s;
 	-moz-transition: .5s .5s;
 	-o-transition: 0s 0s;
-	transition: 0s 0s;
 }
 
 #context {
@@ -494,15 +494,14 @@ section.container>form.flip>.front {
 #letter .container {
 	position: absolute;
 	width: 100%;
-	/*height: 50%;*/
+	perspective: 800px;
 	-webkit-perspective: 800px;
 	-moz-perspective: 800px;
-	perspective: 800px;
 	top: 0;
 	left: 0;
+	transition: 0s 0s;
 	-webkit-transition: 0s 0s;
 	-moz-transition: 0s 0s;
-	transition: 0s 0s;
 	z-index: 1;
 }
 
@@ -513,15 +512,15 @@ section.container>form.flip>.front {
 
 #letter .flip {
 	position: absolute;
+	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
+	transition: transform 0.5s 0s;
 	-webkit-transition: -webkit-transform 0.5s 0s;
 	-moz-transition: -moz-transform 0.5s 0s;
-	transition: -moz-transform 0.5s 0s;
+	transform-origin: left top;
 	-webkit-transform-origin: left top;
 	-moz-transform-origin: left top;
-	transform-origin: left top;
 }
 
 #letter .flip>.front,
@@ -529,34 +528,34 @@ section.container>form.flip>.front {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
 }
 
 #letter .flip>.back {
+	transform: rotateX(180deg);
 	-webkit-transform: rotateX(180deg);
 	-moz-transform: rotateX(180deg);
-	transform: rotateX(180deg);
 }
 
 #content:target #letter .flip {
+	transform: rotateX(180deg);
 	-webkit-transform: rotateX(180deg);
 	-moz-transform: rotateX(180deg);
-	transform: rotateX(180deg);
+	transition-duration: 0.5s;
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
-	transition-duration: 0.5s;
+	transition-delay: 1s;
 	-webkit-transition-delay: 1s;
 	-moz-transition-delay: 1s;
-	transition-delay: 1s;
 }
 
 #content:target #letter .container {
 	z-index: -1;
+	transition: z-index 0s 1.5s;
 	-webkit-transition: z-index 0s 1.5s;
 	-moz-transition: z-index 0s 1.5s;
-	transition: z-index 0s 1.5s;
 }
 
 #letter .flip .front {
@@ -580,84 +579,5 @@ section.container>form.flip>.front {
 }
 
 .no-csstransforms3d #content:target #letter .flip .back {
-	top: -140px;
-}
-
-input[type="text"] {
-	background: transparent;
-	border: none;
-	border-bottom: 1px dotted #837362;
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
-	width: 50%;
-	-webkit-appearance: none;
-}
-
-input[type="text"]:focus {
-	outline: none;
-	border-bottom: 1px solid #837362;
-	-webkit-appearance: none;
-}
-
-textarea {
-	margin: 10px auto 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 90%;
-	height: 160px;
-	padding: 10px;
-	display: block;
-	background: transparent;
-	background: rgba(255, 255, 255, 0.07);
-	border: 1px dashed #c8bfb6;
-}
-
-textarea:focus {
-	outline: none;
-	background-color: rgba(255, 255, 255, 0.12);
-	border-color: rgba(255, 255, 255, 0.46);
-	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-}
-
-input[type="submit"] {
-	cursor: pointer;
-	display: block;
-	margin: 10px auto;
-	-webkit-appearance: none;
-	font-size: .9em;
-	background: #9b4849;
-	padding: 5px 20px;
-	border-radius: 3px;
-	border: 1px solid #9b4849;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-	color: #fff;
-	transition: background .5s;
-	-webkit-transition: background .5s;
-}
-
-input[type="submit"]:hover {
-	background: #783839;
-}
-
-/*-------ie8-----------*/
-.container.target>form.flip>.back,
-#content.target #letter .flip .front {
-	display: none;
-}
-
-#content.target .container#lid {
-	z-index: -1;
-}
-
-#content.target .container#lid .back {
-	display: block;
-	top: -150px;
-}
-
-#content.target #letter {
-	top: -40%;
-}
-
-#content.target #letter .flip .back {
 	top: -140px;
 }
