@@ -63,6 +63,12 @@
 	background: url(../img/stamp.png) no-repeat;
 }
 
+#recipient {
+	font-size: 1.5em;
+	line-height: 1.6;
+	float: left;
+}
+
 #envelope {
 	display: none;
 }
