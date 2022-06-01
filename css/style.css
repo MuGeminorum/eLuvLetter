@@ -499,15 +499,31 @@ section.container>form.flip>.front {
 	-o-transition: 0s 0s;
 }
 
-#context {
+#data {
 	height: 210px;
 	overflow-y: auto;
 }
 
+#data::-webkit-scrollbar {
+	width: 10px;
+}
+
+#data::-webkit-scrollbar-thumb {
+	background: #908172;
+	border-radius: 5px;
+}
+
+#data::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #eae1d5;
+}
+
 #content:target #letter {
 	top: -40%;
-	-o-transition: .5s .5s;
 	transition: .5s .5s;
+	-webkit-transition: .5s .5s;
+	-moz-transition: .5s .5s;
+	-o-transition: .5s .5s;
 }
 
 #letter .container {
