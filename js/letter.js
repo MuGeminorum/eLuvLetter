@@ -64,7 +64,6 @@ $("#open").click(function () {
 		let player = document.getElementById('music');
 		if (player.paused) {
 			player.play();
-			$('#music_btn').css("opacity", "1");
 			$('#music_btn').css("display", "block");
 		}
 	}
@@ -77,11 +76,11 @@ function playPause() {
 
 	if (player.paused) {
 		player.play();
-		play_btn.css("opacity", "1");
+		play_btn.css("background", "url(./img/play.png) no-repeat");
 	}
 	else {
 		player.pause();
-		play_btn.css("opacity", "0.2");
+		play_btn.css("background", "url(./img/mute.png) no-repeat");
 	}
 }
 
