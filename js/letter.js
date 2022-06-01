@@ -76,11 +76,11 @@ function playPause() {
 
 	if (player.paused) {
 		player.play();
-		play_btn.css("background", "url(./img/play.png) no-repeat");
+		play_btn.attr('class', 'play');
 	}
 	else {
 		player.pause();
-		play_btn.css("background", "url(./img/mute.png) no-repeat");
+		play_btn.attr('class', 'mute');
 	}
 }
 
