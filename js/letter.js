@@ -44,6 +44,8 @@ $("#open").click(function () {
 
 	if (!envelope_opened) {
 
+		$('#half').css('display', "block");
+
 		new Typed('.letter', {
 			strings: [
 				"^1000Dear&nbsp;&nbsp;" + content.to,
@@ -56,7 +58,6 @@ $("#open").click(function () {
 		});
 
 		$('#open').find("span").eq(0).css('background-position', "0 -150px");
-		$('#half').css('display', "block");
 
 		envelope_opened = true;
 
@@ -142,6 +143,9 @@ window.onload = function () {
 		content.sign = getPureStr(content.from).pxWidth('18px Satisfy, serif');
 		document.title = result.title;
 		$('#recipient').append(content.to);
+		if (result.stamp != null) {
+			$('#stamp').css('background', 'url(' + result.stamp + ') no-repeat');
+		}
 		toBase64(result.bgm);
 	});
 

@@ -54,6 +54,16 @@
 	background: url(../img/half.png) no-repeat;
 }
 
+#stamp {
+	float: right;
+	display: block;
+	width: 135px;
+	height: 110px;
+	margin-top: -100px;
+	margin-right: -7px;
+	background: url(../img/stamp.png) no-repeat;
+}
+
 #envelope {
 	display: none;
 }
@@ -260,6 +270,7 @@ a:hover {
 }
 
 #flip2back {
+	margin-right: -128px;
 	margin-top: 150px;
 	float: right;
 }
@@ -426,7 +437,7 @@ section.container>form.flip>div {
 
 #lid .flip .front,
 section.container>form.flip .front {
-	background: beige url("../img/bg.png");
+	background: beige url("../img/texture.png");
 	border: 1px #eae1d5 solid;
 	box-shadow: inset 0 0 10px 1px rgba(255, 255, 255, 0.6), 0 2px 3px -2px rgba(0, 0, 0, 0.6);
 	padding: 20px 30px;
@@ -436,8 +447,7 @@ section.container>form.flip .front {
 
 section.container>form.flip>.front {
 	font-size: 1.25em;
-	background: beige url("../img/bg.png");
-	background: url("../img/stamp.png") no-repeat 450px 20px, url("../img/bg.png");
+	background: beige url("../img/texture.png");
 	padding: 120px 20px 20px 40%;
 	border: 1px #eae1d5 solid;
 }
@@ -457,12 +467,12 @@ section.container>form.flip>.front {
 
 #top {
 	text-align: right;
-	background: beige url("../img/bg.png");
-	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(163, 140, 130, 0.17) 100%), url("../img/bg.png");
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(163, 140, 130, 0.17))), url("../img/bg.png");
-	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(163, 140, 130, 0.17) 100%), url("../img/bg.png");
-	background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(163, 140, 130, 0.17) 100%), url("../img/bg.png");
-	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(163, 140, 130, 0.17) 100%), url("../img/bg.png");
+	background: beige url("../img/texture.png");
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(163, 140, 130, 0.17) 100%), url("../img/texture.png");
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(163, 140, 130, 0.17))), url("../img/texture.png");
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(163, 140, 130, 0.17) 100%), url("../img/texture.png");
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(163, 140, 130, 0.17) 100%), url("../img/texture.png");
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(163, 140, 130, 0.17) 100%), url("../img/texture.png");
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
