@@ -30,21 +30,22 @@ function getPureStr(str) {
 	return res;
 }
 
-let envelope_opened = false;
-
-let content = {
-	to: "",
-	from: "",
-	recipient: "",
-	text: "",
-	sign: 0
-};
+function loadingPage() {
+	let heart_div = $('.heart');
+	let heart_parent = heart_div.parent();
+	let page_width = heart_parent.width();
+	let page_height = heart_parent.height();
+	let heart_width = heart_div.width();
+	let heart_height = heart_div.height();
+	heart_div.css('top', (page_height - heart_height) / 2);
+	heart_div.css('left', (page_width - heart_width) / 2);
+}
 
 $("#open").click(function () {
 
 	if (!envelope_opened) {
 
-		$('#half').css('display', "block");
+		$('#wax-half').css('display', "block");
 
 		new Typed('.letter', {
 			strings: [
@@ -69,104 +70,3 @@ $("#open").click(function () {
 	}
 
 });
-
-function playPause() {
-	let player = document.getElementById('music');
-	let play_btn = $('#music_btn');
-
-	if (player.paused) {
-		player.play();
-		play_btn.attr('class', 'play');
-	}
-	else {
-		player.pause();
-		play_btn.attr('class', 'mute');
-	}
-}
-
-
-function toBase64(audioURL) {
-	window.URL = window.URL || window.webkitURL;
-	let xhr = new XMLHttpRequest();
-	xhr.responseType = "blob";
-	xhr.open("GET", audioURL, true);
-	xhr.onload = function () {
-		if (this.status == 200) {
-			let reader = new FileReader();
-			reader.readAsDataURL(this.response);
-			reader.onload = function () {
-				$('#music').attr('src', reader.result);
-				$('#envelope').fadeIn('slow');
-				$('.heart').fadeOut('fast');
-				let currentUrl = window.location.href;
-				let firstIndex = currentUrl.indexOf("#");
-				if (firstIndex <= 0) window.location.href = currentUrl + "#contact";
-			};
-
-		}
-	}
-	xhr.send(null);
-}
-
-
-window.onresize = function () {
-	let cherry_container = $('#jsi-cherry-container');
-	let canvas = cherry_container.find('canvas').eq(0);
-	canvas.height(cherry_container.height());
-	canvas.width(cherry_container.width());
-	// Do scaling for sakura background when the window is resized
-	loadingPage();
-}
-
-function loadingPage() {
-	let heart_div = $('.heart');
-	let heart_parent = heart_div.parent();
-	let page_width = heart_parent.width();
-	let page_height = heart_parent.height();
-	let heart_width = heart_div.width();
-	let heart_height = heart_div.height();
-	heart_div.css('top', (page_height - heart_height) / 2);
-	heart_div.css('left', (page_width - heart_width) / 2);
-}
-
-window.onload = function () {
-
-	loadingPage();
-
-	$.ajaxSettings.async = false;
-	$.getJSON("./font/content.json", function (result) {
-		content.to = result.to;
-		content.from = result.from;
-		content.recipient = result.recipient;
-		content.text = result.text;
-		content.sign = getPureStr(content.from).pxWidth('18px Satisfy, serif');
-		document.title = result.title;
-		$('#recipient').append(content.to);
-		if (result.stamp != null) {
-			$('#stamp').css('background', 'url(' + result.stamp + ') no-repeat');
-		}
-		toBase64(result.bgm);
-	});
-
-	document.addEventListener('touchstart', function (event) {
-		if (event.touches.length > 1) event.preventDefault();
-	});
-
-	let lastTouchEnd = 0;
-
-	document.addEventListener('touchend', function (event) {
-
-		let now = (new Date()).getTime();
-		if (now - lastTouchEnd <= 300) event.preventDefault();
-		lastTouchEnd = now;
-
-	}, false);
-
-	document.addEventListener('gesturestart', function (event) {
-		event.preventDefault();
-	});
-
-	$('body').css('opacity', '1');
-	$('#jsi-cherry-container').css('z-index', '-99');
-
-}

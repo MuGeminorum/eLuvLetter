@@ -1,0 +1,22 @@
+#footer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#music_btn {
+    position: relative;
+    margin: 0 auto;
+    display: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.play {
+    background: url(../img/play.png) no-repeat;
+}
+
+.mute {
+    background: url(../img/mute.png) no-repeat;
+}

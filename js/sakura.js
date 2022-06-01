@@ -199,3 +199,12 @@ CHERRY_BLOSSOM.prototype = {
 };
 
 $(function () { RENDERER.init(); });
+
+window.onresize = function () {
+	let cherry_container = $('#jsi-cherry-container');
+	let canvas = cherry_container.find('canvas').eq(0);
+	canvas.height(cherry_container.height());
+	canvas.width(cherry_container.width());
+	// Do scaling for sakura background when the window is resized
+	loadingPage();
+}
