@@ -56,6 +56,7 @@ $("#open").click(function () {
 		});
 
 		$('#open').find("span").eq(0).css('background-position', "0 -150px");
+		$('#half').css('display', "block");
 
 		envelope_opened = true;
 

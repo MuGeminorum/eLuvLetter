@@ -44,6 +44,16 @@
 	background-position: 0 0;
 }
 
+#half {
+	display: none;
+	margin: 0 auto;
+	margin-top: 45px;
+	margin-bottom: -120px;
+	width: 139px;
+	height: 75px;
+	background: url(../img/half.png) no-repeat;
+}
+
 #envelope {
 	display: none;
 }
