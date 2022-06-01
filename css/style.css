@@ -252,10 +252,6 @@ a {
 	display: block;
 }
 
-/* a:hover {
-	color: #783839;
-} */
-
 #open {
 	width: 150px;
 	text-align: center;
@@ -267,12 +263,6 @@ a {
 	margin: 160px 20px 0 0;
 	float: right;
 }
-
-/* #flip2back {
-	margin-right: -128px;
-	margin-top: 150px;
-	float: right;
-} */
 
 #close {
 	position: absolute;
