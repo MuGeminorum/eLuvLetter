@@ -45,6 +45,9 @@ window.onload = function () {
         event.preventDefault();
     });
 
+    let content = $('#contact');
+    let mtop = (window.innerHeight - content.height()) * 0.5;
+    content.css('margin-top', mtop + 'px');
     $('body').css('opacity', '1');
     $('#jsi-cherry-container').css('z-index', '-99');
 
