@@ -3,7 +3,6 @@
 	width: 150px;
 	height: 150px;
 	background: url(../img/wax.png) no-repeat;
-	background-position: 0 0;
 }
 
 #wax-half {
@@ -13,7 +12,8 @@
 	margin-bottom: -120px;
 	width: 139px;
 	height: 75px;
-	background: url(../img/wax-half.png) no-repeat;
+	background: url(../img/wax.png) no-repeat;
+	background-position-y: -80px;
 }
 
 #stamp {
