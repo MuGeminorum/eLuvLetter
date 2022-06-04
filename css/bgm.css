@@ -11,12 +11,14 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
+    background: url(../img/bgm.png) no-repeat;
 }
 
 .play {
-    background: url(../img/play.png) no-repeat;
+    background-position-y: 0px !important;
 }
 
 .mute {
-    background: url(../img/mute.png) no-repeat;
+    background-position-y: -40px !important;
+
 }
