@@ -30,6 +30,7 @@ git clone https://github.com/%Your_GitHub_Account%/eLuvLetter.git
     "from"      : "sign",
     "recipient" : "letter recipient",
     "title"     : "Web page tab title",
+    "stamp"     : "Stamp URL",
     "bgm"       : "BGM URL",
     "text"      : "letter content"
 }
