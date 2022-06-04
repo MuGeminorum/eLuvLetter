@@ -12,7 +12,7 @@ window.onload = function () {
 
     loadingPage();
 
-    $.ajaxSettings.async = false;
+    $.ajaxSettings.async = true;
     $.getJSON("./font/content.json", function (result) {
         content.to = result.to;
         content.from = result.from;
