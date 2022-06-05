@@ -32,6 +32,7 @@ git clone https://github.com/你的github用户名/eLuvLetter.git
     "from"      : "信纸落款",
     "recipient" : "信纸收件人",
     "title"     : "网页页签标题",
+    "stamp"     : "邮票图 URL",
     "bgm"       : "BGM URL",
     "text"      : "信纸内容"
 }
