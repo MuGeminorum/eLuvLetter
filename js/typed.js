@@ -19,7 +19,7 @@
 })(this, function () {
 	return /******/ (function (modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = {};
+/******/ 	let installedModules = {};
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -29,7 +29,7 @@
 /******/ 			return installedModules[moduleId].exports;
 /******/
 /******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
+/******/ 		let module = installedModules[moduleId] = {
 /******/ 			exports: {},
 /******/ 			id: moduleId,
 /******/ 			loaded: false
@@ -72,13 +72,13 @@
 				value: true
 			});
 
-			var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+			let _createClass = (function () { function defineProperties(target, props) { for (let i = 0; i < props.length; i++) { let descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 			function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-			var _initializerJs = __webpack_require__(1);
+			let _initializerJs = __webpack_require__(1);
 
-			var _htmlParserJs = __webpack_require__(3);
+			let _htmlParserJs = __webpack_require__(3);
 
 			/**
 			 * Welcome to Typed.js!
@@ -87,7 +87,7 @@
 			 * @returns {object} a new Typed object
 			 */
 
-			var Typed = (function () {
+			let Typed = (function () {
 				function Typed(elementId, options) {
 					_classCallCheck(this, Typed);
 
@@ -159,7 +159,7 @@
 				}, {
 					key: 'reset',
 					value: function reset() {
-						var restart = arguments.length <= 0 || arguments[0] === undefined ? true : arguments[0];
+						let restart = arguments.length <= 0 || arguments[0] === undefined ? true : arguments[0];
 
 						clearInterval(this.timeout);
 						this.replaceText('');
@@ -184,7 +184,7 @@
 				}, {
 					key: 'begin',
 					value: function begin() {
-						var _this = this;
+						let _this = this;
 
 						this.typingComplete = false;
 						this.shuffleStringsIfNeeded(this);
@@ -210,15 +210,15 @@
 				}, {
 					key: 'typewrite',
 					value: function typewrite(curString, curStrPos) {
-						var _this2 = this;
+						let _this2 = this;
 
 						if (this.fadeOut && this.el.classList.contains(this.fadeOutClass)) {
 							this.el.classList.remove(this.fadeOutClass);
 							if (this.cursor) this.cursor.classList.remove(this.fadeOutClass);
 						}
 
-						var humanize = this.humanizer(this.typeSpeed);
-						var numChars = 1;
+						let humanize = this.humanizer(this.typeSpeed);
+						let numChars = 1;
 
 						if (this.pause.status === true) {
 							this.setPauseStatus(curString, curStrPos, true);
@@ -230,14 +230,14 @@
 							// skip over any HTML chars
 							curStrPos = _htmlParserJs.htmlParser.typeHtmlChars(curString, curStrPos, _this2);
 
-							var pauseTime = 0;
-							var substr = curString.substr(curStrPos);
+							let pauseTime = 0;
+							let substr = curString.substr(curStrPos);
 							// check for an escape character before a pause value
 							// format: \^\d+ .. eg: ^1000 .. should be able to print the ^ too using ^^
 							// single ^ are removed from string
 							if (substr.charAt(0) === '^') {
 								if (/^\^\d+/.test(substr)) {
-									var skip = 1; // skip at least 1
+									let skip = 1; // skip at least 1
 									substr = /\d+/.exec(substr)[0];
 									skip += substr.length;
 									pauseTime = parseInt(substr);
@@ -257,9 +257,9 @@
 									if (curStrPos + numChars > curString.length) break;
 								}
 								// strip out the escape characters and append all the string in between
-								var stringBeforeSkip = curString.substring(0, curStrPos);
-								var stringSkipped = curString.substring(stringBeforeSkip.length + 1, curStrPos + numChars);
-								var stringAfterSkip = curString.substring(curStrPos + numChars + 1);
+								let stringBeforeSkip = curString.substring(0, curStrPos);
+								let stringSkipped = curString.substring(stringBeforeSkip.length + 1, curStrPos + numChars);
+								let stringAfterSkip = curString.substring(curStrPos + numChars + 1);
 								curString = stringBeforeSkip + stringSkipped + stringAfterSkip;
 								numChars--;
 							}
@@ -303,7 +303,7 @@
 						// start typing each new char into existing string
 						// curString: arg, this.el.html: original text inside element
 						curStrPos += numChars;
-						var nextString = curString.substr(0, curStrPos);
+						let nextString = curString.substr(0, curStrPos);
 						this.replaceText(nextString);
 						// loop the function
 						this.typewrite(curString, curStrPos);
@@ -318,7 +318,7 @@
 				}, {
 					key: 'doneTyping',
 					value: function doneTyping(curString, curStrPos) {
-						var _this3 = this;
+						let _this3 = this;
 
 						// fires callback function
 						this.options.onStringTyped(this.arrayPos, this);
@@ -346,7 +346,7 @@
 				}, {
 					key: 'backspace',
 					value: function backspace(curString, curStrPos) {
-						var _this4 = this;
+						let _this4 = this;
 
 						if (this.pause.status === true) {
 							this.setPauseStatus(curString, curStrPos, true);
@@ -355,18 +355,18 @@
 						if (this.fadeOut) return this.initFadeOut();
 
 						this.toggleBlinking(false);
-						var humanize = this.humanizer(this.backSpeed);
+						let humanize = this.humanizer(this.backSpeed);
 
 						this.timeout = setTimeout(function () {
 							curStrPos = _htmlParserJs.htmlParser.backSpaceHtmlChars(curString, curStrPos, _this4);
 							// replace text with base text + typed characters
-							var curStringAtPosition = curString.substr(0, curStrPos);
+							let curStringAtPosition = curString.substr(0, curStrPos);
 							_this4.replaceText(curStringAtPosition);
 
 							// if smartBack is enabled
 							if (_this4.smartBackspace) {
 								// the remaining part of the current string is equal of the same part of the new string
-								var nextString = _this4.strings[_this4.arrayPos + 1];
+								let nextString = _this4.strings[_this4.arrayPos + 1];
 								if (nextString && curStringAtPosition === nextString.substr(0, curStrPos)) {
 									_this4.stopNum = curStrPos;
 								} else {
@@ -442,7 +442,7 @@
 						if (this.pause.status) return;
 						if (this.cursorBlinking === isBlinking) return;
 						this.cursorBlinking = isBlinking;
-						var status = isBlinking ? 'infinite' : 0;
+						let status = isBlinking ? 'infinite' : 0;
 						this.cursor.style.animationIterationCount = status;
 					}
 
@@ -477,7 +477,7 @@
 				}, {
 					key: 'initFadeOut',
 					value: function initFadeOut() {
-						var _this5 = this;
+						let _this5 = this;
 
 						this.el.className += ' ' + this.fadeOutClass;
 						if (this.cursor) this.cursor.className += ' ' + this.fadeOutClass;
@@ -525,7 +525,7 @@
 				}, {
 					key: 'bindFocusEvents',
 					value: function bindFocusEvents() {
-						var _this6 = this;
+						let _this6 = this;
 
 						if (!this.isInput) return;
 						this.el.addEventListener('focus', function (e) {
@@ -572,23 +572,23 @@
 				value: true
 			});
 
-			var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+			let _extends = Object.assign || function (target) { for (let i = 1; i < arguments.length; i++) { let source = arguments[i]; for (let key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-			var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+			let _createClass = (function () { function defineProperties(target, props) { for (let i = 0; i < props.length; i++) { let descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 			function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 			function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-			var _defaultsJs = __webpack_require__(2);
+			let _defaultsJs = __webpack_require__(2);
 
-			var _defaultsJs2 = _interopRequireDefault(_defaultsJs);
+			let _defaultsJs2 = _interopRequireDefault(_defaultsJs);
 
 			/**
 			 * Initialize the Typed object
 			 */
 
-			var Initializer = (function () {
+			let Initializer = (function () {
 				function Initializer() {
 					_classCallCheck(this, Initializer);
 				}
@@ -672,14 +672,14 @@
 						if (self.stringsElement) {
 							self.strings = [];
 							self.stringsElement.style.display = 'none';
-							var strings = Array.prototype.slice.apply(self.stringsElement.children);
-							var _iteratorNormalCompletion = true;
-							var _didIteratorError = false;
-							var _iteratorError = undefined;
+							let strings = Array.prototype.slice.apply(self.stringsElement.children);
+							let _iteratorNormalCompletion = true;
+							let _didIteratorError = false;
+							let _iteratorError = undefined;
 
 							try {
-								for (var _iterator = strings[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-									var s = _step.value;
+								for (let _iterator = strings[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+									let s = _step.value;
 
 									self.strings.push(s.innerHTML.trim());
 								}
@@ -729,7 +729,7 @@
 						self.typingComplete = false;
 
 						// Set the order in which the strings are typed
-						for (var i in self.strings) {
+						for (let i in self.strings) {
 							self.sequence[i] = i;
 						}
 
@@ -743,7 +743,7 @@
 				}, {
 					key: 'getCurrentElContent',
 					value: function getCurrentElContent(self) {
-						var elContent = '';
+						let elContent = '';
 						if (self.attr) {
 							elContent = self.el.getAttribute(self.attr);
 						} else if (self.isInput) {
@@ -765,9 +765,9 @@
 							return;
 						}
 
-						var css = document.createElement('style');
+						let css = document.createElement('style');
 						css.type = 'text/css';
-						var innerCss = '';
+						let innerCss = '';
 						if (self.showCursor) {
 							innerCss += '\n        .typed-cursor{\n          opacity: 1;\n          animation: typedjsBlink 0.7s infinite;\n          -webkit-animation: typedjsBlink 0.7s infinite;\n                  animation: typedjsBlink 0.7s infinite;\n        }\n        @keyframes typedjsBlink{\n          50% { opacity: 0.0; }\n        }\n        @-webkit-keyframes typedjsBlink{\n          0% { opacity: 1; }\n          50% { opacity: 0.0; }\n          100% { opacity: 1; }\n        }\n      ';
 						}
@@ -786,7 +786,7 @@
 			})();
 
 			exports['default'] = Initializer;
-			var initializer = new Initializer();
+			let initializer = new Initializer();
 			exports.initializer = initializer;
 
 			/***/
@@ -805,7 +805,7 @@
 			Object.defineProperty(exports, '__esModule', {
 				value: true
 			});
-			var defaults = {
+			let defaults = {
 				/**
 				 * @property {array} strings strings to be typed
 				 * @property {string} stringsElement ID of element containing string children
@@ -971,11 +971,11 @@
 				value: true
 			});
 
-			var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+			let _createClass = (function () { function defineProperties(target, props) { for (let i = 0; i < props.length; i++) { let descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 			function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-			var HTMLParser = (function () {
+			let HTMLParser = (function () {
 				function HTMLParser() {
 					_classCallCheck(this, HTMLParser);
 				}
@@ -994,9 +994,9 @@
 
 					value: function typeHtmlChars(curString, curStrPos, self) {
 						if (self.contentType !== 'html') return curStrPos;
-						var curChar = curString.substr(curStrPos).charAt(0);
+						let curChar = curString.substr(curStrPos).charAt(0);
 						if (curChar === '<' || curChar === '&') {
-							var endTag = '';
+							let endTag = '';
 							if (curChar === '<') {
 								endTag = '>';
 							} else {
@@ -1025,9 +1025,9 @@
 					key: 'backSpaceHtmlChars',
 					value: function backSpaceHtmlChars(curString, curStrPos, self) {
 						if (self.contentType !== 'html') return curStrPos;
-						var curChar = curString.substr(curStrPos).charAt(0);
+						let curChar = curString.substr(curStrPos).charAt(0);
 						if (curChar === '>' || curChar === ';') {
-							var endTag = '';
+							let endTag = '';
 							if (curChar === '>') {
 								endTag = '<';
 							} else {
@@ -1049,7 +1049,7 @@
 			})();
 
 			exports['default'] = HTMLParser;
-			var htmlParser = new HTMLParser();
+			let htmlParser = new HTMLParser();
 			exports.htmlParser = htmlParser;
 
 			/***/

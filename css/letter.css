@@ -23,7 +23,13 @@
 	height: 110px;
 	margin-top: -100px;
 	margin-right: -7px;
-	background: url(../img/stamp.png) no-repeat;
+	background: url(../img/stamp-base.png) no-repeat;
+}
+
+#stamp img {
+	display: block;
+	margin: 8% auto;
+	height: 82%;
 }
 
 #recipient {

@@ -1,4 +1,4 @@
-var RENDERER = {
+let RENDERER = {
 	INIT_CHERRY_BLOSSOM_COUNT: 9,	// default : 30
 	MAX_ADDING_INTERVAL: 30,		// default : 10
 
@@ -21,7 +21,7 @@ var RENDERER = {
 		this.render = this.render.bind(this);
 	},
 	createCherries: function () {
-		for (var i = 0, length = Math.round(this.INIT_CHERRY_BLOSSOM_COUNT * this.width / 1000); i < length; i++) {
+		for (let i = 0, length = Math.round(this.INIT_CHERRY_BLOSSOM_COUNT * this.width / 1000); i < length; i++) {
 			this.cherries.push(new CHERRY_BLOSSOM(this, true));
 		}
 	},
@@ -32,7 +32,7 @@ var RENDERER = {
 		this.cherries.sort(function (cherry1, cherry2) {
 			return cherry1.z - cherry2.z;
 		});
-		for (var i = this.cherries.length - 1; i >= 0; i--) {
+		for (let i = this.cherries.length - 1; i >= 0; i--) {
 			if (!this.cherries[i].render(this.context)) {
 				this.cherries.splice(i, 1);
 			}
@@ -44,7 +44,7 @@ var RENDERER = {
 	}
 };
 
-var CHERRY_BLOSSOM = function (renderer, isRandom) {
+let CHERRY_BLOSSOM = function (renderer, isRandom) {
 	this.renderer = renderer;
 	this.init(isRandom);
 };
@@ -72,7 +72,7 @@ CHERRY_BLOSSOM.prototype = {
 		this.endPhi = false;
 		this.rippleCount = 0;
 
-		var axis = this.getAxis(),
+		let axis = this.getAxis(),
 			theta = this.theta + Math.ceil(-(this.y + this.renderer.height * this.SURFACE_RATE) / this.vy) * Math.PI / 500;
 		theta %= Math.PI * 2;
 
@@ -91,7 +91,7 @@ CHERRY_BLOSSOM.prototype = {
 		return min + (max - min) * Math.random();
 	},
 	getAxis: function () {
-		var rate = this.FOCUS_POSITION / (this.z + this.FOCUS_POSITION),
+		let rate = this.FOCUS_POSITION / (this.z + this.FOCUS_POSITION),
 			x = this.renderer.width / 2 + this.x * rate,
 			y = this.renderer.height / 2 - this.y * rate;
 		return { rate: rate, x: x, y: y };
@@ -103,7 +103,7 @@ CHERRY_BLOSSOM.prototype = {
 		context.bezierCurveTo(10, -60, 60, 20, 0, 40);
 		context.fill();
 
-		for (var i = -4; i < 4; i++) {
+		for (let i = -4; i < 4; i++) {
 			context.beginPath();
 			context.moveTo(0, 40);
 			context.quadraticCurveTo(i * 12, 10, i * 4, -24 + Math.abs(i) * 2);
@@ -111,7 +111,7 @@ CHERRY_BLOSSOM.prototype = {
 		}
 	},
 	render: function (context) {
-		var axis = this.getAxis();
+		let axis = this.getAxis();
 
 		if (axis.y == this.thresholdY && this.rippleCount < this.MAX_RIPPLE_COUNT) {
 			context.save();
@@ -152,7 +152,7 @@ CHERRY_BLOSSOM.prototype = {
 
 		if (this.y <= -this.renderer.height / 4) {
 			if (!this.endTheta) {
-				for (var theta = Math.PI / 2, end = Math.PI * 3 / 2; theta <= end; theta += Math.PI) {
+				for (let theta = Math.PI / 2, end = Math.PI * 3 / 2; theta <= end; theta += Math.PI) {
 					if (this.theta < theta && this.theta + Math.PI / 200 > theta) {
 						this.theta = theta;
 						this.endTheta = true;
@@ -161,7 +161,7 @@ CHERRY_BLOSSOM.prototype = {
 				}
 			}
 			if (!this.endPhi) {
-				for (var phi = Math.PI / 8, end = Math.PI * 7 / 8; phi <= end; phi += Math.PI * 3 / 4) {
+				for (let phi = Math.PI / 8, end = Math.PI * 7 / 8; phi <= end; phi += Math.PI * 3 / 4) {
 					if (this.phi < phi && this.phi + Math.PI / 200 > phi) {
 						this.phi = Math.PI / 8;
 						this.endPhi = true;

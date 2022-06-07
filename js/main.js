@@ -23,7 +23,7 @@ window.onload = function () {
         $('#recipient').append(content.to);
         $('#flip').text(result.sender);
         if (result.stamp != null) {
-            $('#stamp').css('background', 'url(' + result.stamp + ') no-repeat');
+            $('#stamp img').attr('src', result.stamp);
         }
         toBase64(result.bgm);
     });
