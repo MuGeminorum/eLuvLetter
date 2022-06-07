@@ -2,6 +2,7 @@
     "to": "To&nbsp;&nbsp;Alice",
     "from": "ボブ^200より",
     "recipient": "アリス^200ちゃん",
+    "sender": "Bob",
     "title": "eLuvLetter",
     "stamp": "./img/stamp.png",
     "bgm": "./bgm/bgm.mp3",

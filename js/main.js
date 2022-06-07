@@ -21,6 +21,7 @@ window.onload = function () {
         content.sign = getPureStr(content.from).pxWidth('18px Satisfy, serif');
         document.title = result.title;
         $('#recipient').append(content.to);
+        $('#flip').text(result.sender);
         if (result.stamp != null) {
             $('#stamp').css('background', 'url(' + result.stamp + ') no-repeat');
         }

@@ -35,6 +35,7 @@
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-o-user-select: none;
+	color: #9b4849;
 }
 
 #envelope {
@@ -49,9 +50,9 @@
 }
 
 #flip {
-	margin: 160px 0 0 20px;
+	margin: 165px 0 0 10px;
 	float: left;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 #close {
