@@ -30,6 +30,11 @@
 	font-size: 1.5em;
 	line-height: 1.6;
 	float: left;
+	cursor: default;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
 }
 
 #envelope {
@@ -44,8 +49,9 @@
 }
 
 #flip {
-	margin: 160px 20px 0 0;
-	float: right;
+	margin: 160px 0 0 20px;
+	float: left;
+	font-size: 24px;
 }
 
 #close {
