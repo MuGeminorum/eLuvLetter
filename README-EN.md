@@ -1,4 +1,4 @@
-# Usage of eLuvLetter
+# Use eLuvLetter
 
 [![license](https://img.shields.io/github/license/george-chou/eLuvLetter.svg)](https://github.com/george-chou/eLuvLetter/blob/master/LICENSE)
 
@@ -13,7 +13,7 @@
 ## Install Git
 <a href="https://git-scm.com/downloads" target="_blank">git-scm.com/downloads</a>
 
-## Custom
+## Customize
 
 1. Register a GitHub account and fork a copy of this repository to your own account
 
@@ -49,7 +49,7 @@ cd eLuvLetter
 git add .
 git commit -a
 i
-input description
+# input description
 :wq!
 git push
 ```
@@ -66,6 +66,4 @@ git push
 
 7. After the deployment is complete, you can visit `https://%PROJECT_NAME%.vercel.app` in the WAN to view the webpage. (where `%PROJECT_NAME%` is the `PROJECT NAME` just modified under `Configure Project`)
 
-<!-- ## Future work
-1. At present, there is a word limit for the content of the stationery. In the future, a roller can be added to the stationery to expand the word count;
-2. The background is occupied by the cherry blossom effect, we can add a static background or other options. -->
+*Good luck!*
