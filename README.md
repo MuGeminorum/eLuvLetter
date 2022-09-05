@@ -1,73 +1,69 @@
-# 表白信封使用教程
+# Use eLuvLetter
 
 [![license](https://img.shields.io/github/license/george-chou/eLuvLetter.svg)](https://github.com/george-chou/eLuvLetter/blob/master/LICENSE)
 
-可遵循 <a href='https://www.bilibili.com/video/BV1wp4y1W7aH?p=2' target='_blank'>视频教程</a> 验证代码，多半 **`疑难杂症`** 是 **`直接用浏览器打开index.html`** 所致。
+## Important links
+|    Name    | URL                                         |
+| :--------: | :------------------------------------------ |
+|    Git     | <https://git-scm.com/downloads>             |
+|   GitHub   | <https://github.com/>                       |
+| eLuvLetter | <https://github.com/george-chou/eLuvLetter> |
+|   Vercel   | <https://vercel.com/>                       |
 
-## 重要链接准备
-|    名称     | 网址                                        |
-| :---------: | :------------------------------------------ |
-|  Git 官网   | <https://git-scm.com/downloads>             |
-| GitHub 官网 | <https://github.com/>                       |
-|  仓库网址   | <https://github.com/george-chou/eLuvLetter> |
-| Vercel 官网 | <https://vercel.com/>                       |
+## Install Git
+<a href="https://git-scm.com/downloads" target="_blank">git-scm.com/downloads</a>
 
-## 安装 Git
-教程：<a href="https://www.bilibili.com/video/BV1BE411g7SV" target="_blank">bilibili.com/video/BV1BE411g7SV</a>
+## Customize
 
-下载：<a href="https://git-scm.com/downloads" target="_blank">git-scm.com/downloads</a>
+1. Register a GitHub account and fork a copy of this repository to your own account
 
-## 自定义信封
-1. 首先注册一个 GitHub 账号并 fork 一份 <a href='https://github.com/george-chou/eLuvLetter' target="_blank">此仓库</a> 到你自己的账号
-2. 克隆仓库到本地：
+2. Clone the repository to local:
 ```
-git clone https://github.com/你的github用户名/eLuvLetter.git
+git clone https://github.com/%Your_GitHub_Account%/eLuvLetter.git
 ```
 
-3. 进入 ./eLuvLetter/font/ 目录下打开 content.json，按如下说明自定义配置：
+3. Go to the `./eLuvLetter/font/` directory, open `content.json`, and customize the configuration as follows:
 
 ```
 {
-    "to"        : "信封收件人",
-    "from"      : "信纸落款",
-    "recipient" : "信纸收件人",
-    "title"     : "网页页签标题",
-    "stamp"     : "邮票图 URL",
+    "to"        : "envelope recipient",
+    "from"      : "sign",
+    "recipient" : "letter recipient",
+    "title"     : "Web page tab title",
+    "stamp"     : "Stamp URL",
     "bgm"       : "BGM URL",
-    "text"      : "信纸内容"
+    "text"      : "letter content"
 }
 ```
 
-其中demo里符号 `^n` 的含义是打字机停顿 n 毫秒，
+The symbol `^n` in the demo means that the typewriter pauses for n milliseconds,
 
-BGM URL 可以是 demo 代码中带的默认 mp3 目录，也可以是网络 mp3 直链(注：最好不用 API 获取 mp3，可能会被跨域封锁)
-<br>
-如果使用默认目录，可将自己的 mp3 重命名成 bgm.mp3 覆盖掉 ./eLuvLetter/bgm 下的 bgm.mp3 实现自定义修改 BGM (建议 bgm.mp3 不要过大，否则加载时间过长卡在心跳特效，影响体验)
+BGM URL is the default mp3 directory or mp3 direct link in the demo code(Note: It is best not to use the API to get mp3, it may be blocked by cross-domain)
 
-## 部署到 Vercel 及广域网展示
-1. 首先将修改过的本地代码同步到你的 GitHub 账号上：
+If you use the default directory, you can rename your mp3 to `bgm.mp3` and overwrite `bgm.mp3` under `./eLuvLetter/bgm` to achieve custom modification of BGM
+
+## Deploy to Vercel
+1. Sync the modified local code to your GitHub account:
 ```
 cd eLuvLetter
 git add .
 git commit -a
-# 键入i键
-# 输入变更描述
-# 输入 :wq! 回车
+# i
+# input description
+# :wq!
 git push
 ```
 
-2. 进入 <a href="https://vercel.com/login" target="_blank">Vercel 官网</a>
+2. Enter <a href="https://vercel.com/login" target="_blank">Vercel official website</a>
 
-3. 使用你自己的 GitHub 账号授权登录，点击 **`+ New Project`**
+3. Log in with your own GitHub account authorization, click `+ New Project`
 
-4. 在 **`Import Git Repository`** 的搜索框中键入关键字 eLuvLetter 找到之前 fork 的那个仓库
+4. Type the keyword eLuvLetter in the search box of `Import Git Repository` to find the repository that was previously forked
 
-5. 点击 **`Import`**，修改 **`Configure Project`** 下的 **`PROJECT NAME `**
+5. Click `Import` to modify the `PROJECT NAME` under `Configure Project`
 
-6. 保证 **`PROJECT NAME `** 不与别人冲突后点击 **`Deploy`**
+6. Make sure that `PROJECT NAME` does not conflict with others and click `Deploy`
 
-7. 部署完成后，可在广域网中访问 **`https://%PROJECT_NAME%.vercel.app`** 查看网页。(其中 **`%PROJECT_NAME%`** 就是刚刚 **`Configure Project`** 下修改的 **`PROJECT NAME `**)
+7. After the deployment is complete, you can visit `https://%PROJECT_NAME%.vercel.app` in the WAN to view the webpage. (where `%PROJECT_NAME%` is the `PROJECT NAME` just modified under `Configure Project`)
 
-注：fork 得到的私人仓库部署到 Vercel 后，更新代码 git push 到私人仓库时，Vercel 端会随之自动更新，因此无需重复部署。
-
-*表白不是冲锋陷阵的号角，而是水到渠成的仪式，祝你成功 ♥*
+*Good luck!*
