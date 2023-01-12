@@ -303,8 +303,8 @@ function createPointFlowers() {
 
     var vtxsrc = document.getElementById("sakura_point_vsh").textContent;
     var frgsrc = document.getElementById("sakura_point_fsh").textContent;
-    console.log(vtxsrc);
-    console.log(frgsrc);
+    // console.log(vtxsrc);
+    // console.log(frgsrc);
 
     pointFlower.program = createShader(
         vtxsrc, frgsrc,
