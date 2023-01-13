@@ -1,6 +1,7 @@
 # Use eLuvLetter
 
 [![license](https://img.shields.io/github/license/george-chou/eLuvLetter.svg)](https://github.com/george-chou/eLuvLetter/blob/master/LICENSE)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/693b7eb2-519a-469c-86f8-722aadad2e46/deploy-status)](https://app.netlify.com/sites/eluvletter/deploys)
 
 ## Important links
 |    Name    | URL                                         |
