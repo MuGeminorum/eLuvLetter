@@ -4,12 +4,14 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/693b7eb2-519a-469c-86f8-722aadad2e46/deploy-status)](https://app.netlify.com/sites/eluvletter/deploys)
 
 ## Important links
-|    Name    | URL                                         |
-| :--------: | :------------------------------------------ |
-|    Git     | <https://git-scm.com/downloads>             |
-|   GitHub   | <https://github.com/>                       |
-| eLuvLetter | <https://github.com/george-chou/eLuvLetter> |
-|   Vercel   | <https://vercel.com/>                       |
+|    Name    | URL                                            |
+| :--------: | :--------------------------------------------- |
+|    Git     | <https://git-scm.com/downloads>                |
+|   GitHub   | <https://github.com/>                          |
+| eLuvLetter | <https://github.com/george-chou/eLuvLetter>    |
+|   Vercel   | <https://vercel.com/>                          |
+|  2D Demo   | <https://eluvletter.netlify.app>               |
+|  3D Demo   | <https://eluvletter.netlify.app/index-3d.html> |
 
 ## Install Git
 <a href="https://git-scm.com/downloads" target="_blank">git-scm.com/downloads</a>
