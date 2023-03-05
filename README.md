@@ -35,7 +35,7 @@ git clone https://github.com/%Your_GitHub_Account%/eLuvLetter.git
     "title"     : "Web page tab title",
     "stamp"     : "Stamp URL",
     "bgm"       : "BGM URL",
-    "text"      : "letter content"
+    "text"      : "letter ^n content"
 }
 ```
 
