@@ -7,18 +7,17 @@
 |    Name    | URL                                            |
 | :--------: | :--------------------------------------------- |
 |    Git     | <https://git-scm.com/downloads>                |
-|   GitHub   | <https://github.com/>                          |
+|   GitHub   | <https://github.com>                           |
 | eLuvLetter | <https://github.com/george-chou/eLuvLetter>    |
-|  Netlify   | <https://app.netlify.com/>                     |
+|  Netlify   | <https://app.netlify.com>                      |
 |  2D Demo   | <https://eluvletter.netlify.app>               |
 |  3D Demo   | <https://eluvletter.netlify.app/index-3d.html> |
 
-## Install Git
-<a href="https://git-scm.com/downloads" target="_blank">git-scm.com/downloads</a>
-
 ## Customize
 
-1. Register a GitHub account and fork a copy of this repository to your own account
+0. Download and install Git;
+
+1. Register a GitHub account, set SSH, and fork a copy of this repository to your own account;
 
 2. Clone the repository to local:
 ```
