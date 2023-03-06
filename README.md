@@ -9,7 +9,7 @@
 |    Git     | <https://git-scm.com/downloads>                |
 |   GitHub   | <https://github.com/>                          |
 | eLuvLetter | <https://github.com/george-chou/eLuvLetter>    |
-|   Vercel   | <https://vercel.com/>                          |
+|  Netlify   | <https://app.netlify.com/>                     |
 |  2D Demo   | <https://eluvletter.netlify.app>               |
 |  3D Demo   | <https://eluvletter.netlify.app/index-3d.html> |
 
@@ -45,7 +45,7 @@ BGM URL is the default mp3 directory or mp3 direct link in the demo code(Note: I
 
 If you use the default directory, you can rename your mp3 to `bgm.mp3` and overwrite `bgm.mp3` under `./eLuvLetter/bgm` to achieve custom modification of BGM
 
-## Deploy to Vercel
+## Deploy to Netlify
 1. Sync the modified local code to your GitHub account:
 ```
 cd eLuvLetter
@@ -56,17 +56,11 @@ git commit -a
 # :wq!
 git push
 ```
-
-2. Enter <a href="https://vercel.com/login" target="_blank">Vercel official website</a>
-
-3. Log in with your own GitHub account authorization, click `+ New Project`
-
-4. Type the keyword eLuvLetter in the search box of `Import Git Repository` to find the repository that was previously forked
-
-5. Click `Import` to modify the `PROJECT NAME` under `Configure Project`
-
-6. Make sure that `PROJECT NAME` does not conflict with others and click `Deploy`
-
-7. After the deployment is complete, you can visit `https://%PROJECT_NAME%.vercel.app` in the WAN to view the webpage. (where `%PROJECT_NAME%` is the `PROJECT NAME` just modified under `Configure Project`)
+2. Enter [Netlify official website](https://app.netlify.com);
+3. Use your GitHub account to login by authorization, click `Add new site` - `Import an existing project`;
+4. Click `GitHub`, enter the keyword `eLuvLetter` in the search box to find the previously forked repo, and select it;
+5. Click `Deploy site` to jump into `Site overview` page automatically, click `Site settings`;
+6. Click `Change site name` under `Site information`, modify second-level domain name not conflict to others, and click `Save`;
+7. After the deployment, we can visit `https://%PROJECT_NAME%.netlify.app` to broswe your page(The `%PROJECT_NAME%` is the second-level domain name customized just now)
 
 *Good luck!*
