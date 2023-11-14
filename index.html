@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="Put on headphones" />
+	<title>eLuvLetter</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/letter.css" />
+	<link rel="stylesheet" href="css/sakura.css" />
+	<link rel="stylesheet" href="css/typed.css" />
+	<link rel="stylesheet" href="css/bgm.css" />
+
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="js/sakura.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/typed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bgm.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body class="unselect">
+	<div id="jsi-cherry-container">
+		<div class="heart"></div>
+	</div>
+
+	<div id="envelope">
+		<section class="container" id="contact">
+			<form class="flip">
+				<div class="front">
+					<a id="stamp" href="#"><img></a>
+					<span id="recipient"></span>
+				</div>
+				<div id="content" class="back">
+					<div id="letter">
+						<div class="container">
+							<div class="flip">
+								<div class="front"></div>
+								<div class="back">
+									<div id="data">
+										<p class="letter"></p>
+									</div>
+									<a id="close" href="#"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="top">
+						<a id="wax-half" href="#"></a>
+						<a id="flipback" href="#contact">♥</a>
+					</div>
+					<div id="lid" class="container">
+						<div class="flip">
+							<div class="front">
+								<a id="open" href="#content"><span id="wax"></span></a>
+							</div>
+							<div class="back"></div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<div id="footer">
+			<audio id="music" preload="auto" loop></audio>
+			<a id="music_btn" class="play" href="javascript:playPause();"></a>
+		</div>
+	</div>
+</body>
+<script src="js/letter.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

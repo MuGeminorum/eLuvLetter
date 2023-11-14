@@ -1,0 +1,63 @@
+#jsi-cherry-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+    opacity: 0.618;
+    z-index: 99;
+}
+
+.heart {
+    width: 200px;
+    height: 200px;
+    background: url("https://www.intogif.com/resource/image/loading/gears.gif") #e74949 center no-repeat;
+    position: absolute;
+    transform: rotate(45deg) scale(0.5);
+    animation: heartbit 0.5s alternate infinite;
+}
+
+.heart::before {
+    content: '';
+    width: 200px;
+    height: 100px;
+    background: #e74949;
+    position: absolute;
+    left: 0;
+    top: -99px;
+    border-radius: 100px 100px 0 0;
+}
+
+.heart::after {
+    content: '';
+    width: 100px;
+    height: 200px;
+    background: #e74949;
+    position: absolute;
+    left: -99px;
+    top: 0;
+    border-radius: 100px 0 0 100px;
+}
+
+@keyframes heartbit {
+    0% {
+        transform: rotate(45deg) scale(0.5);
+    }
+
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+}
+
+canvas {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+}
