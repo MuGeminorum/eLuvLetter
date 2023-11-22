@@ -65,4 +65,4 @@ git push
 6. Click `Change site name` under `Site information`, modify second-level domain name not conflict to others, and click `Save`;
 7. After the deployment, we can visit `https://%PROJECT_NAME%.netlify.app` to broswe your page(The `%PROJECT_NAME%` is the second-level domain name customized just now)
 
-*Good luck!*
+*Good luck* 💖
