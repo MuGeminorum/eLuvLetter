@@ -11,9 +11,8 @@
 |       GitHub        | <https://github.com>                                  |
 |     eLuvLetter      | <https://github.com/MuGeminorum/eLuvLetter>           |
 |       Netlify       | <https://app.netlify.com>                             |
-|       2D Demo       | <https://eluvletter.pages.dev>                        |
-|       3D Demo       | <https://eluvletter.pages.dev/index-3d.html>          |
-| Tutorial in Chinese | <https://www.cnblogs.com/MuGeminorum/p/16617269.html> |
+|       2D Demo       | <https://eluvletter.netlify.app>                      |
+|       3D Demo       | <https://eluvletter.netlify.app/index-3d.html>        |
 
 Note: the heartbeat animation indicates that the BGM is loading, please be patient and wait util the envelope appears.
 
