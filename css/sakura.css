@@ -14,7 +14,7 @@
 .heart {
     width: 200px;
     height: 200px;
-    background: url("https://www.intogif.com/resource/image/loading/gears.gif") #e74949 center no-repeat;
+    background: #e74949 center no-repeat;
     position: absolute;
     transform: rotate(45deg) scale(0.5);
     animation: heartbit 0.5s alternate infinite;
