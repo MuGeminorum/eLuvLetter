@@ -9,9 +9,7 @@ let content = {
 };
 
 window.onload = function () {
-
     loadingPage();
-
     $.ajaxSettings.async = true;
     $.getJSON("./font/content.json", function (result) {
         content.to = result.to;
@@ -25,33 +23,30 @@ window.onload = function () {
         if (result.stamp != null) {
             $('#stamp img').attr('src', result.stamp);
         }
-        toBase64(result.bgm);
+        if (result.base64) {
+            toBase64(result.bgm);
+        }
+        else {
+            $('#music').attr('src', result.bgm);
+        }
     });
-
     document.addEventListener('touchstart', function (event) {
         if (event.touches.length > 1) event.preventDefault();
     });
-
     let lastTouchEnd = 0;
-
     document.addEventListener('touchend', function (event) {
-
         let now = (new Date()).getTime();
         if (now - lastTouchEnd <= 300) event.preventDefault();
         lastTouchEnd = now;
-
     }, false);
-
     document.addEventListener('gesturestart', function (event) {
         event.preventDefault();
     });
-
     let contact = $('#contact');
     let mtop = (window.innerHeight - contact.height()) * 0.5;
     contact.css('margin-top', mtop + 'px');
     $('body').css('opacity', '1');
     $('#jsi-cherry-container').css('z-index', '-99');
-
 }
 
 window.onresize = function () {

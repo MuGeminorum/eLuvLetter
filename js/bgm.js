@@ -1,7 +1,6 @@
 function playPause() {
     let player = document.getElementById('music');
     let play_btn = $('#music_btn');
-
     if (player.paused) {
         player.play();
         play_btn.attr('class', 'play');
@@ -11,7 +10,6 @@ function playPause() {
         play_btn.attr('class', 'mute');
     }
 }
-
 
 function toBase64(audioURL) {
     window.URL = window.URL || window.webkitURL;
@@ -30,7 +28,6 @@ function toBase64(audioURL) {
                 let firstIndex = currentUrl.indexOf("#");
                 if (firstIndex <= 0) window.location.href = currentUrl + "#contact";
             };
-
         }
     }
     xhr.send(null);

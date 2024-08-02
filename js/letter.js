@@ -2,10 +2,8 @@ String.prototype.pxWidth = function (font) {
 	let canvas = String.prototype.pxWidth.canvas ||
 		(String.prototype.pxWidth.canvas = document.createElement("canvas")),
 		context = canvas.getContext("2d");
-
 	font && (context.font = font);
 	let metrics = context.measureText(this);
-
 	return metrics.width;
 }
 
@@ -42,11 +40,8 @@ function loadingPage() {
 }
 
 $("#open").click(function () {
-
 	if (!envelope_opened) {
-
 		$('#wax-half').css('display', "block");
-
 		new Typed('.letter', {
 			strings: [
 				"^1000",
@@ -57,16 +52,12 @@ $("#open").click(function () {
 			typeSpeed: 100,
 			backSpeed: 50
 		});
-
 		$('#open').find("span").eq(0).css('background-position', "0 -150px");
-
 		envelope_opened = true;
-
 		let player = document.getElementById('music');
 		if (player.paused) {
 			player.play();
 			$('#music_btn').css("display", "block");
 		}
 	}
-
 });
