@@ -31,6 +31,7 @@ cd eLuvLetter
     "to"        : "envelope recipient",
     "from"      : "sign",
     "recipient" : "letter recipient",
+    "sender"    : "letter sender",
     "title"     : "Web page tab title",
     "stamp"     : "Stamp URL",
     "bgm"       : "BGM URL",
