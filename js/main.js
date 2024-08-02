@@ -23,11 +23,11 @@ window.onload = function () {
         if (result.stamp != null) {
             $('#stamp img').attr('src', result.stamp);
         }
-        if (content.base64) {
+        if (result.base64) {
             toBase64(result.bgm);
         }
         else {
-            bgmReady(content.bgm);
+            bgmReady(result.bgm);
         }
     });
     document.addEventListener('touchstart', function (event) {
