@@ -1,4 +1,4 @@
-# Use eLuvLetter
+# eLuvLetter usage
 [![license](https://img.shields.io/github/license/MuGeminorum/eLuvLetter.svg)](https://github.com/MuGeminorum/eLuvLetter/blob/master/LICENSE)
 [![Deploy static content to Pages](https://github.com/MuGeminorum/eLuvLetter/actions/workflows/static.yml/badge.svg?branch=main)](https://github.com/MuGeminorum/eLuvLetter/actions/workflows/static.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/712880d1-1b1f-4500-a50f-16433c31d130/deploy-status)](https://app.netlify.com/sites/eluvletter/deploys)
@@ -6,31 +6,26 @@
 [![](https://img.shields.io/badge/ModelScope-eluvletter-624aff.svg)](https://www.modelscope.cn/studios/MuGeminorum/eluvletter)
 
 ## Important links
-|    Name    | URL                                            |
-| :--------: | :--------------------------------------------- |
-|    Git     | <https://git-scm.com/downloads>                |
-|   GitHub   | <https://github.com>                           |
-| eLuvLetter | <https://github.com/MuGeminorum/eLuvLetter>    |
-|  Netlify   | <https://app.netlify.com>                      |
-|  2D Demo   | <https://eluvletter.netlify.app>               |
-|  3D Demo   | <https://eluvletter.netlify.app/index-3d.html> |
-
+|    Name    | URL                                         |
+| :--------: | :------------------------------------------ |
+|    Git     | <https://git-scm.com/downloads>             |
+|   GitHub   | <https://github.com>                        |
+| eLuvLetter | <https://github.com/MuGeminorum/eLuvLetter> |
+|  Netlify   | <https://app.netlify.com>                   |
+|  2D Demo   | <https://eluvletter.netlify.app>            |
+|  3D Demo   | <https://eluvletter.netlify.app/index-3d>   |
 Note: the heartbeat animation indicates that the BGM is loading, please be patient and wait util the envelope appears.
 
 ## Customize
-
-0. Download and install Git;
-
-1. Register a GitHub account, set SSH, and fork a copy of this repository to your own account;
-
-2. Clone the repository to local:
-```
+1. Download and install Git;
+2. Register a GitHub account, set SSH, and fork a copy of this repository to your own account;
+3. Clone the repository to local:
+```bash
 git clone https://github.com/%Your_GitHub_Account%/eLuvLetter.git
+cd eLuvLetter
 ```
-
-3. Go to the `./eLuvLetter/font/` directory, open `content.json`, and customize the configuration as follows:
-
-```
+4. Go to the `./eLuvLetter/font/` directory, open `content.json`, and customize the configuration as follows:
+```json
 {
     "to"        : "envelope recipient",
     "from"      : "sign",
@@ -38,25 +33,24 @@ git clone https://github.com/%Your_GitHub_Account%/eLuvLetter.git
     "title"     : "Web page tab title",
     "stamp"     : "Stamp URL",
     "bgm"       : "BGM URL",
+    "base64"    : false,
     "text"      : "letter ^n content"
 }
 ```
 
 The symbol `^n` in the demo means that the typewriter pauses for n milliseconds,
-
 BGM URL is the default mp3 directory or mp3 direct link in the demo code(Note: It is best not to use the API to get mp3, it may be blocked by cross-domain)
-
 If you use the default directory, you can rename your mp3 to `bgm.mp3` and overwrite `bgm.mp3` under `./eLuvLetter/bgm` to achieve custom modification of BGM (mp3 size is better < 500K)
 
 ## Deploy to Netlify
 1. Sync the modified local code to your GitHub account:
-```
+```bash
 cd eLuvLetter
 git add .
 git commit -a
 # i
 # input description
-# :wq!
+# ESC :wq! Enter
 git push
 ```
 2. Enter [Netlify official website](https://app.netlify.com);
