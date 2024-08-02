@@ -11,6 +11,15 @@ function playPause() {
     }
 }
 
+function bgmReady(bgmSrc) {
+    $('#music').attr('src', bgmSrc);
+    $('#envelope').fadeIn('slow');
+    $('.heart').fadeOut('fast');
+    let currentUrl = window.location.href;
+    let firstIndex = currentUrl.indexOf("#");
+    if (firstIndex <= 0) window.location.href = currentUrl + "#contact";
+}
+
 function toBase64(audioURL) {
     window.URL = window.URL || window.webkitURL;
     let xhr = new XMLHttpRequest();
@@ -21,12 +30,7 @@ function toBase64(audioURL) {
             let reader = new FileReader();
             reader.readAsDataURL(this.response);
             reader.onload = function () {
-                $('#music').attr('src', reader.result);
-                $('#envelope').fadeIn('slow');
-                $('.heart').fadeOut('fast');
-                let currentUrl = window.location.href;
-                let firstIndex = currentUrl.indexOf("#");
-                if (firstIndex <= 0) window.location.href = currentUrl + "#contact";
+                bgmReady(reader.result)
             };
         }
     }
