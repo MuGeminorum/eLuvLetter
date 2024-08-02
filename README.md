@@ -3,16 +3,17 @@
 [![Deploy static content to Pages](https://github.com/MuGeminorum/eLuvLetter/actions/workflows/static.yml/badge.svg?branch=main)](https://github.com/MuGeminorum/eLuvLetter/actions/workflows/static.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/712880d1-1b1f-4500-a50f-16433c31d130/deploy-status)](https://app.netlify.com/sites/eluvletter/deploys)
 [![](https://img.shields.io/badge/bilibili-BV1DV4y1c77c-fc8bab.svg)](https://www.bilibili.com/video/BV1DV4y1c77c)
+[![](https://img.shields.io/badge/ModelScope-eluvletter-624aff.svg)](https://www.modelscope.cn/studios/MuGeminorum/eluvletter)
 
 ## Important links
-|        Name         | URL                                                   |
-| :-----------------: | :---------------------------------------------------- |
-|         Git         | <https://git-scm.com/downloads>                       |
-|       GitHub        | <https://github.com>                                  |
-|     eLuvLetter      | <https://github.com/MuGeminorum/eLuvLetter>           |
-|       Netlify       | <https://app.netlify.com>                             |
-|       2D Demo       | <https://eluvletter.netlify.app>                      |
-|       3D Demo       | <https://eluvletter.netlify.app/index-3d.html>        |
+|    Name    | URL                                            |
+| :--------: | :--------------------------------------------- |
+|    Git     | <https://git-scm.com/downloads>                |
+|   GitHub   | <https://github.com>                           |
+| eLuvLetter | <https://github.com/MuGeminorum/eLuvLetter>    |
+|  Netlify   | <https://app.netlify.com>                      |
+|  2D Demo   | <https://eluvletter.netlify.app>               |
+|  3D Demo   | <https://eluvletter.netlify.app/index-3d.html> |
 
 Note: the heartbeat animation indicates that the BGM is loading, please be patient and wait util the envelope appears.
 

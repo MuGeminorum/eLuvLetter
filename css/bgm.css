@@ -14,6 +14,13 @@
     background: url(../img/bgm.png) no-repeat;
 }
 
+.idx {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
 .play {
     background-position-y: 0px !important;
 }
