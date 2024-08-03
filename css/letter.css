@@ -417,3 +417,7 @@ section.container>form.flip>.front {
 .no-csstransforms3d #content:target #letter .flip .back {
 	top: -140px;
 }
+
+.letter {
+	font-family: cursive;
+}

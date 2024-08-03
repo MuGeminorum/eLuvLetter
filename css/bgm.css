@@ -17,7 +17,7 @@
 .idx {
     display: block;
     position: fixed;
-    bottom: 10px;
+    top: 10px;
     left: 10px;
 }
 

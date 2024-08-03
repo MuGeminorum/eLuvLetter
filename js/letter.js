@@ -45,9 +45,9 @@ $("#open").click(function () {
 		new Typed('.letter', {
 			strings: [
 				"^1000",
-				content.recipient + "<br><br>" +
-				content.text + "<br><br><p style='float:right; display:block; width:" +
-				content.sign + "px;'>^1000" + content.from + "</p>"
+				content.salutation + "<br><br>" +
+				content.body + "<br><br><p style='float:right; display:block; width:" +
+				content.sign + "px;'>^1000" + content.signature + "</p>"
 			],
 			typeSpeed: 100,
 			backSpeed: 50
