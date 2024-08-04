@@ -24,7 +24,7 @@ The heartbeat animation indicates that the BGM is loading, please be patient and
 git clone https://github.com/%Your_GitHub_Account%/eLuvLetter.git
 cd eLuvLetter
 ```
-4. Go to the `./eLuvLetter/font/` directory, open `content.json`, and customize the config by [JSON Generator](https://www.modelscope.cn/studios/MuGeminorum/eluvletter):
+4. Go to the `./eLuvLetter/font/` directory, customize `content.json` by [eLuvLetter JSON Generator](https://www.modelscope.cn/studios/MuGeminorum/eluvletter):
 ```json
 {
     "recipient"  : "envelope recipient",
@@ -43,8 +43,8 @@ cd eLuvLetter
 cd eLuvLetter
 git add .
 git commit -a
-# i
-# input description
+# press i
+# input any description
 # ESC :wq! Enter
 git push
 ```
@@ -53,6 +53,6 @@ git push
 4. Click `GitHub`, enter the keyword `eLuvLetter` in the search box to find the previously forked repo, and select it;
 5. Click `Deploy site` to jump into `Site overview` page automatically, click `Site settings`;
 6. Click `Change site name` under `Site information`, modify second-level domain name not conflict to others, and click `Save`;
-7. After the deployment, we can visit `https://%PROJECT_NAME%.netlify.app` to broswe your page(The `%PROJECT_NAME%` is the second-level domain name customized just now)
+7. After the deployment, we can visit `https://%PROJECT_NAME%.netlify.app` to broswe your page (`%PROJECT_NAME%` is the second-level domain name customized just now)
 
 **Good luck~💖**
