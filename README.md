@@ -1,4 +1,4 @@
-# eLuvLetter usage
+# Tutorial of using eLuvLetter
 [![license](https://img.shields.io/github/license/MuGeminorum/eLuvLetter.svg)](https://github.com/MuGeminorum/eLuvLetter/blob/master/LICENSE)
 [![Deploy static content to Pages](https://github.com/MuGeminorum/eLuvLetter/actions/workflows/static.yml/badge.svg?branch=main)](https://github.com/MuGeminorum/eLuvLetter/actions/workflows/static.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/712880d1-1b1f-4500-a50f-16433c31d130/deploy-status)](https://app.netlify.com/sites/eluvletter/deploys)
@@ -28,12 +28,12 @@ cd eLuvLetter
 4. Go to the `./eLuvLetter/font/` directory, customize `content.json` by [eLuvLetter JSON Generator](https://www.modelscope.cn/studios/MuGeminorum/eluvletter):
 ```json
 {
-    "recipient"  : "envelope recipient",
-    "sender"     : "envelope sender",
-    "salutation" : "letter salutation",
-    "signature"  : "letter signature",
-    "body"       : "letter body text",
-    "title"      : "Web page tab title",
+    "recipient"  : "The recipient centered on front of the envelope",
+    "sender"     : "The sender name on back of the envelope",
+    "salutation" : "The salutation in letter's upper left corner",
+    "signature"  : "The signature in letter's lower right corner",
+    "body"       : "Body of the letter",
+    "title"      : "Browser tab text",
     "bgm"        : "BGM base64 code",
 }
 ```
