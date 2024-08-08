@@ -281,6 +281,8 @@ section.container>form.flip>.front {
 /* data */
 #data {
 	height: 210px;
+	overflow-y: auto;
+	touch-action: pan-y;
 }
 
 #data::-webkit-scrollbar {
