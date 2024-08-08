@@ -1,5 +1,6 @@
 html {
     overscroll-behavior: none;
+    touch-action: pan-x pan-y;
 }
 
 #jsi-cherry-container {
