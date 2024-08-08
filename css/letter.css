@@ -73,7 +73,6 @@
 }
 
 /**************container***************/
-
 section.container {
 	position: relative;
 	width: 600px;
@@ -131,7 +130,6 @@ section.container:target>form.flip {
 }
 
 /* lid */
-
 .container#lid {
 	position: relative;
 	width: 100%;
@@ -174,7 +172,6 @@ section.container:target>form.flip {
 }
 
 /* flip */
-
 #lid .flip {
 	width: 100%;
 	height: 100%;
@@ -260,7 +257,6 @@ section.container>form.flip>.front {
 }
 
 /* top */
-
 #top {
 	text-align: right;
 	background: beige url("../img/texture.png");
@@ -283,7 +279,6 @@ section.container>form.flip>.front {
 }
 
 /* data */
-
 #data {
 	height: 210px;
 	overflow-y: auto;
@@ -304,7 +299,6 @@ section.container>form.flip>.front {
 }
 
 /* letter */
-
 #letter {
 	background: #fafafa;
 	width: 90%;

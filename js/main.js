@@ -1,5 +1,4 @@
 let envelope_opened = false;
-
 let content = {
     salutation: "",
     signature: "",
