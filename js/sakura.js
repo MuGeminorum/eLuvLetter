@@ -626,7 +626,7 @@ function initPostProcess() {
 }
 
 function renderPostProcess() {
-    gl.enable(gl.TEXTURE_2D);
+    // gl.enable(gl.TEXTURE_2D);
     gl.disable(gl.DEPTH_TEST);
     var bindRT = function (rt, isclear) {
         gl.bindFramebuffer(gl.FRAMEBUFFER, rt.frameBuffer);

@@ -155,7 +155,7 @@ void main(void) {
     //-0.69315 = ln(0.5)
     distancefade = min(1.0, exp((uFade.x - pdist) * 0.69315 / uFade.y));
 }
-</script>
+    </script>
     <script id="sakura_point_fsh" type="x-shader/x_fragment">
 #ifdef GL_ES
 //precision mediump float;
@@ -227,7 +227,7 @@ void main(void) {
     
     gl_FragColor = vec4(col * 0.5, alpha);
 }
-</script>
+    </script>
     <!-- effects -->
     <script id="fx_common_vsh" type="x-shader/x_vertex">
 uniform vec3 uResolution;
@@ -241,7 +241,7 @@ void main(void) {
     texCoord = aPosition.xy * 0.5 + vec2(0.5, 0.5);
     screenCoord = aPosition.xy * vec2(uResolution.z, 1.0);
 }
-</script>
+    </script>
     <script id="bg_fsh" type="x-shader/x_fragment">
 #ifdef GL_ES
 //precision mediump float;
@@ -261,7 +261,7 @@ void main(void) {
     col = mix(vec3(0.02, 0.0, 0.03), vec3(0.96, 0.98, 1.0) * 1.5, c);
     gl_FragColor = vec4(col * 0.5, 1.0);
 }
-</script>
+    </script>
     <script id="fx_brightbuf_fsh" type="x-shader/x_fragment">
 #ifdef GL_ES
 //precision mediump float;
@@ -277,7 +277,7 @@ void main(void) {
     vec4 col = texture2D(uSrc, texCoord);
     gl_FragColor = vec4(col.rgb * 2.0 - vec3(0.5), 1.0);
 }
-</script>
+    </script>
     <script id="fx_dirblur_r4_fsh" type="x-shader/x_fragment">
 #ifdef GL_ES
 //precision mediump float;
@@ -298,7 +298,7 @@ void main(void) {
     col = col + texture2D(uSrc, texCoord - (uBlurDir.xy + uBlurDir.zw) * uDelta);
     gl_FragColor = col / 5.0;
 }
-</script>
+    </script>
     <!-- effect fragment shader template -->
     <script id="fx_common_fsh" type="x-shader/x_fragment">
 #ifdef GL_ES
@@ -314,7 +314,7 @@ varying vec2 screenCoord;
 void main(void) {
     gl_FragColor = texture2D(uSrc, texCoord);
 }
-</script>
+    </script>
     <!-- post processing -->
     <script id="pp_final_vsh" type="x-shader/x_vertex">
 uniform vec3 uResolution;
@@ -326,7 +326,7 @@ void main(void) {
     texCoord = aPosition.xy * 0.5 + vec2(0.5, 0.5);
     screenCoord = aPosition.xy * vec2(uResolution.z, 1.0);
 }
-</script>
+    </script>
     <script id="pp_final_fsh" type="x-shader/x_fragment">
 #ifdef GL_ES
 //precision mediump float;
@@ -348,7 +348,7 @@ void main(void) {
     gl_FragColor = vec4(col.rgb, 1.0);
     gl_FragColor.a = 1.0;
 }
-</script>
+    </script>
 </body>
 <script src="js/sakura.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/letter.js" type="text/javascript" charset="utf-8"></script>
