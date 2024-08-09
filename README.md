@@ -2,9 +2,9 @@
 [![license](https://img.shields.io/github/license/MuGeminorum/eLuvLetter.svg)](https://github.com/MuGeminorum/eLuvLetter/blob/master/LICENSE)
 [![Deploy static content to Pages](https://github.com/MuGeminorum/eLuvLetter/actions/workflows/static.yml/badge.svg?branch=main)](https://github.com/MuGeminorum/eLuvLetter/actions/workflows/static.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/712880d1-1b1f-4500-a50f-16433c31d130/deploy-status)](https://app.netlify.com/sites/eluvletter/deploys)
-[![](https://img.shields.io/badge/bilibili-BV1DV4y1c77c-fc8bab.svg)](https://www.bilibili.com/video/BV1DV4y1c77c)
-[![](https://img.shields.io/badge/ModelScope-eluvletter_JSON_Generator-624aff.svg)](https://www.modelscope.cn/studios/MuGeminorum/eluvletter)
-[![](https://img.shields.io/badge/cnblog-16617269-e33e06.svg)](https://www.cnblogs.com/MuGeminorum/p/16617269.html)
+[![bilibili](https://img.shields.io/badge/bilibili-BV1DV4y1c77c-fc8bab.svg)](https://www.bilibili.com/video/BV1DV4y1c77c)
+[![ms](https://img.shields.io/badge/ModelScope-eluvletter-624aff.svg)](https://www.modelscope.cn/studios/MuGeminorum/eluvletter)
+[![cnblog](https://img.shields.io/badge/cnblog-16617269-075db3.svg)](https://www.cnblogs.com/MuGeminorum/p/16617269.html)
 
 The heartbeat animation indicates that the BGM is loading, please be patient and wait util the envelope appears.
 
