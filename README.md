@@ -22,7 +22,7 @@ cd latex_templates
 ```
 
 ## Environment
-- <https://z2.ink/boMq>
+- <https://shm.to/3E02Anf>
 
 ## Thanks
 - <https://github.com/faz0Bear/CCOM_Thesis_Latex_Template>
