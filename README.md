@@ -25,4 +25,5 @@ cd latex_templates
 - <https://QGemlc.short.gy/YSBYKx>
 
 ## Thanks
+- <https://aideadlin.es>
 - <https://github.com/faz0Bear/CCOM_Thesis_Latex_Template>
